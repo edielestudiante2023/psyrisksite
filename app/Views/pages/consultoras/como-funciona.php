@@ -1,5 +1,13 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',         'url' => base_url('/')],
+    ['name' => 'Consultoras',    'url' => base_url('consultoras')],
+    ['name' => 'Cómo funciona',  'url' => base_url('consultoras/como-funciona')],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

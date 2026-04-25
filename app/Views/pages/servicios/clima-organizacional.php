@@ -1,5 +1,26 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                'url' => base_url('/')],
+    ['name' => 'Servicios',             'url' => base_url('/#servicios')],
+    ['name' => 'Clima Organizacional',  'url' => base_url('servicios/clima-organizacional')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Diagnóstico de Clima Organizacional',
+    'description' => 'Diagnóstico de clima organizacional con segmentación por área, cargo y antigüedad. 8 dimensiones medidas, indicadores accionables y capacitaciones de bienestar incluidas.',
+    'url'         => base_url('servicios/clima-organizacional'),
+    'serviceType' => 'Clima organizacional',
+]) ?>
+<?= view('partials/jsonld-faq', ['faqs' => [
+    ['q' => '¿En qué se diferencia el clima organizacional de la batería de riesgo psicosocial?', 'a' => 'La batería es un instrumento legalmente obligatorio que mide factores de riesgo psicosocial definidos por Mintrabajo. El clima organizacional es un diagnóstico estratégico voluntario que mide la percepción global de la experiencia laboral. Son complementarios.'],
+    ['q' => '¿Cada cuánto se debería medir el clima organizacional?', 'a' => 'Una medición anual con pulsos cortos cada trimestre para detectar variaciones tempranas. PsyRisk ofrece ambos formatos.'],
+    ['q' => '¿Cómo se garantiza el anonimato de las respuestas?', 'a' => 'El enlace único evita respuestas duplicadas, pero las respuestas se almacenan disociadas del identificador y los reportes solo se entregan con un mínimo de 7 personas por segmento.'],
+    ['q' => '¿Qué pasa si un área tiene menos de 7 personas?', 'a' => 'El sistema agrupa esa área con la inmediatamente superior o con áreas afines para preservar el anonimato.'],
+    ['q' => '¿Las capacitaciones de bienestar están incluidas en el precio?', 'a' => 'Sí. El plan de Clima Organizacional incluye 2 capacitaciones grupales en formato virtual o presencial sobre los temas que arroje el diagnóstico.'],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <!-- =================== PAGE HERO =================== -->

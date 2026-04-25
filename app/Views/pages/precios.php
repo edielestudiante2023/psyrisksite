@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',  'url' => base_url('/')],
+    ['name' => 'Precios', 'url' => base_url('precios')],
+]]) ?>
+<?= view('partials/jsonld-faq', ['faqs' => [
+    ['q' => '¿El precio de la batería de riesgo psicosocial incluye IVA?', 'a' => 'No. Las tarifas mostradas son antes de IVA. El IVA aplicable se factura según la legislación colombiana vigente.'],
+    ['q' => '¿Cómo se factura el servicio?', 'a' => 'Anticipo del 50% al aceptar cotización + saldo del 50% al entregar el informe oficial. Para empresas con compra recurrente ofrecemos plan de pago a 30 días.'],
+    ['q' => '¿Aceptan ARL como pagador del servicio?', 'a' => 'Algunas ARL permiten reembolso parcial bajo el componente de promoción y prevención. Te ayudamos a estructurar la solicitud con la ARL si tu plan lo cubre.'],
+    ['q' => '¿El precio incluye desplazamiento si la aplicación es presencial?', 'a' => 'Para Bogotá y Cundinamarca, sí. Para otras regiones cotizamos viáticos por separado. La modalidad virtual no tiene este costo adicional.'],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

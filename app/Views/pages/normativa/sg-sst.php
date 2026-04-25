@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',         'url' => base_url('/')],
+    ['name' => 'Recursos',       'url' => base_url('recursos')],
+    ['name' => 'SG-SST Colombia','url' => base_url('normativa/sg-sst')],
+]]) ?>
+<?= view('partials/jsonld-article', [
+    'headline'    => 'SG-SST en Colombia — guía explicada',
+    'description' => 'Sistema de Gestión de Seguridad y Salud en el Trabajo en Colombia: marco legal, estándares mínimos según la Resolución 0312 y conexión con el riesgo psicosocial.',
+    'url'         => base_url('normativa/sg-sst'),
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

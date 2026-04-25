@@ -1,2 +1,8 @@
 User-agent: *
-Disallow: 
+Allow: /
+Disallow: /writable/
+Disallow: /vendor/
+Disallow: /tests/
+
+# Sitemap
+Sitemap: https://psyrisksite.cycloidtalent.com/sitemap.xml

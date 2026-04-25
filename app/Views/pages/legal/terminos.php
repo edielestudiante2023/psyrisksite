@@ -1,5 +1,12 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                 'url' => base_url('/')],
+    ['name' => 'Términos y Condiciones', 'url' => base_url('terminos')],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

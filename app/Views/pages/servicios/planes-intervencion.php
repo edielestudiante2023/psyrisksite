@@ -1,5 +1,26 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                  'url' => base_url('/')],
+    ['name' => 'Servicios',               'url' => base_url('/#servicios')],
+    ['name' => 'Planes de Intervención',  'url' => base_url('servicios/planes-intervencion')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Planes de Intervención Psicosocial',
+    'description' => 'Planes de intervención psicosocial priorizados por dominio, con responsables, plazos, evidencia y trazabilidad. Convierten los hallazgos de la batería en acciones ejecutables.',
+    'url'         => base_url('servicios/planes-intervencion'),
+    'serviceType' => 'Intervención en riesgo psicosocial',
+]) ?>
+<?= view('partials/jsonld-faq', ['faqs' => [
+    ['q' => '¿Necesito tener la batería aplicada para contratar planes de intervención?', 'a' => 'Lo recomendable, sí. Los planes se diseñan sobre hallazgos. Si ya tienes una batería reciente trabajamos sobre ella; si no, lo natural es contratar el paquete integrado.'],
+    ['q' => '¿Quién ejecuta el plan de intervención: PsyRisk o mi empresa?', 'a' => 'El responsable formal siempre es tu empresa según la normativa SST. PsyRisk participa como diseñador, facilitador de capacitaciones y verificador independiente.'],
+    ['q' => '¿Cuánto cuesta un plan de intervención psicosocial?', 'a' => 'Depende de las acciones seleccionadas y del tamaño de la población. Una capacitación grupal típica arranca en 650.000 COP. Un programa completo de 3 meses ronda los 3.500.000 COP.'],
+    ['q' => '¿Las capacitaciones son virtuales o presenciales?', 'a' => 'Ambas. Las virtuales se dictan en vivo, no son grabaciones. Las presenciales las llevamos a tu sede en Bogotá, Cundinamarca y la región central.'],
+    ['q' => '¿Qué pasa si un plan de intervención no logra su objetivo?', 'a' => 'Lo documentamos honestamente y diseñamos una iteración. PsyRisk no factura nuevos servicios por reintentar; entra dentro del acompañamiento del ciclo.'],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <!-- =================== PAGE HERO =================== -->

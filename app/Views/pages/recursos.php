@@ -1,5 +1,13 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',   'url' => base_url('/')],
+    ['name' => 'Recursos', 'url' => base_url('recursos')],
+]]) ?>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Recursos sobre riesgo psicosocial en Colombia","url":"<?= base_url('recursos') ?>","description":"Guías y artículos verificados sobre la Resolución 2764, la batería psicosocial, SG-SST, Ley 1581 de habeas data y otros temas de seguridad y salud en el trabajo."}</script>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

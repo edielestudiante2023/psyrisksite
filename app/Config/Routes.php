@@ -48,3 +48,6 @@ $routes->group('normativa', static function ($routes) {
 // Legal
 $routes->get('privacidad', 'Legal::privacidad');
 $routes->get('terminos', 'Legal::terminos');
+
+// PWA
+$routes->get('offline', 'Pwa::offline');

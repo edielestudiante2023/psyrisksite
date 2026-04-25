@@ -1,5 +1,19 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',         'url' => base_url('/')],
+    ['name' => 'Consultoras',    'url' => base_url('consultoras')],
+    ['name' => 'Marca Propia',   'url' => base_url('consultoras/marca-propia')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Plataforma con Marca Propia para Consultores',
+    'description' => 'Plataforma de batería de riesgo psicosocial con tu logo, dominio y firma profesional. El consultor mantiene el vínculo con sus clientes mientras PsyRisk opera la tecnología en segundo plano.',
+    'url'         => base_url('consultoras/marca-propia'),
+    'serviceType' => 'Plataforma marca propia',
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

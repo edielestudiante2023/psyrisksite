@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                      'url' => base_url('/')],
+    ['name' => 'Para Psicólogos y Consultoras', 'url' => base_url('consultoras')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Programa para Psicólogos Consultores',
+    'description' => 'Programa para psicólogos consultores y firmas de consultoría que ofrecen batería de riesgo psicosocial, clima organizacional y vigilancia epidemiológica con tecnología profesional. Modalidades: plataforma compartida o marca propia.',
+    'url'         => base_url('consultoras'),
+    'serviceType' => 'Plataforma para consultores en SST',
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

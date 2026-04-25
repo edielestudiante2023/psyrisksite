@@ -6,56 +6,51 @@ class Servicios extends BaseController
 {
     public function bateriaRiesgo(): string
     {
-        $data = [
-            'title'       => 'Batería de Riesgo Psicosocial · PsyRisk',
-            'description' => 'Aplicación digital de la Batería de Riesgo Psicosocial conforme Resolución 2764 de 2022. Forma A y B oficiales, tabulación automática y reportes ejecutivos.',
+        return view('pages/servicios/bateria-riesgo', [
+            'title'       => 'Batería de Riesgo Psicosocial · Forma A y B Resolución 2764 · PsyRisk',
+            'description' => 'Aplica la Batería de Riesgo Psicosocial Forma A y B 100% digital. Tabulación automática, informe oficial, SVE y plan de intervención conforme Resolución 2764.',
+            'keywords'    => 'batería de riesgo psicosocial, forma A forma B, resolución 2764, batería psicosocial colombia, evaluación riesgo psicosocial',
             'activeNav'   => 'servicios',
-        ];
-
-        return view('pages/servicios/bateria-riesgo', $data);
+        ]);
     }
 
     public function climaOrganizacional(): string
     {
-        $data = [
-            'title'       => 'Clima Organizacional · PsyRisk',
-            'description' => 'Diagnóstico de clima organizacional con segmentación por área, cargo y antigüedad. Indicadores accionables, capacitaciones de bienestar y dashboard interactivo.',
+        return view('pages/servicios/clima-organizacional', [
+            'title'       => 'Clima Organizacional Empresas · Diagnóstico y Capacitaciones · PsyRisk',
+            'description' => 'Diagnóstico de clima organizacional con segmentación por área, cargo y antigüedad. 8 dimensiones, capacitaciones de bienestar y plan accionable.',
+            'keywords'    => 'clima organizacional, encuesta de clima laboral, diagnóstico clima empresa, clima laboral colombia',
             'activeNav'   => 'servicios',
-        ];
-
-        return view('pages/servicios/clima-organizacional', $data);
+        ]);
     }
 
     public function vigilanciaEpidemiologica(): string
     {
-        $data = [
-            'title'       => 'Vigilancia Epidemiológica · PsyRisk',
-            'description' => 'Sistema de Vigilancia Epidemiológica (SVE) del riesgo psicosocial: monitoreo continuo, alertas tempranas, indicadores trazables y cumplimiento de la Resolución 2764.',
+        return view('pages/servicios/vigilancia-epidemiologica', [
+            'title'       => 'Vigilancia Epidemiológica Psicosocial · SVE · PsyRisk',
+            'description' => 'Sistema de Vigilancia Epidemiológica del riesgo psicosocial: monitoreo continuo, alertas tempranas, indicadores trazables y cumplimiento Resolución 2764.',
+            'keywords'    => 'vigilancia epidemiológica, SVE psicosocial, sistema vigilancia riesgo psicosocial, monitoreo psicosocial',
             'activeNav'   => 'servicios',
-        ];
-
-        return view('pages/servicios/vigilancia-epidemiologica', $data);
+        ]);
     }
 
     public function planesIntervencion(): string
     {
-        $data = [
-            'title'       => 'Planes de Intervención · PsyRisk',
-            'description' => 'Planes de intervención psicosocial priorizados por dominio, con responsables, plazos, evidencia y trazabilidad. Convierte hallazgos en acción real.',
+        return view('pages/servicios/planes-intervencion', [
+            'title'       => 'Planes de Intervención Psicosocial · Acciones Trazables · PsyRisk',
+            'description' => 'Planes de intervención psicosocial priorizados por dominio con responsables, plazos, evidencia documental y verificación. Convertimos hallazgos en acción.',
+            'keywords'    => 'plan de intervención psicosocial, intervención riesgo psicosocial, plan acción SG-SST',
             'activeNav'   => 'servicios',
-        ];
-
-        return view('pages/servicios/planes-intervencion', $data);
+        ]);
     }
 
     public function capacitaciones(): string
     {
-        $data = [
-            'title'       => 'Capacitaciones · PsyRisk',
-            'description' => 'Capacitaciones en liderazgo saludable, gestión del estrés, prevención del agotamiento laboral y bienestar. Formato presencial o virtual con medición de impacto.',
+        return view('pages/servicios/capacitaciones', [
+            'title'       => 'Capacitaciones en Bienestar Laboral y Liderazgo Saludable · PsyRisk',
+            'description' => 'Capacitaciones en liderazgo saludable, manejo del estrés, prevención del agotamiento laboral, comunicación asertiva y bienestar emocional con medición de impacto.',
+            'keywords'    => 'capacitaciones bienestar laboral, capacitación liderazgo saludable, manejo del estrés, prevención burnout',
             'activeNav'   => 'servicios',
-        ];
-
-        return view('pages/servicios/capacitaciones', $data);
+        ]);
     }
 }

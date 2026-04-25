@@ -1,5 +1,26 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                      'url' => base_url('/')],
+    ['name' => 'Servicios',                   'url' => base_url('/#servicios')],
+    ['name' => 'Vigilancia Epidemiológica',   'url' => base_url('servicios/vigilancia-epidemiologica')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Sistema de Vigilancia Epidemiológica Psicosocial',
+    'description' => 'Sistema de Vigilancia Epidemiológica del riesgo psicosocial con monitoreo continuo, alertas tempranas, indicadores trazables y cumplimiento de la Resolución 2764 y el Decreto 1072.',
+    'url'         => base_url('servicios/vigilancia-epidemiologica'),
+    'serviceType' => 'Vigilancia epidemiológica psicosocial',
+]) ?>
+<?= view('partials/jsonld-faq', ['faqs' => [
+    ['q' => '¿El SVE reemplaza la batería de riesgo psicosocial?', 'a' => 'No. La batería es la línea base que identifica los riesgos. El SVE es el proceso continuo que los vigila después. Son complementarios y la normativa exige ambos.'],
+    ['q' => '¿Cada cuánto se generan los reportes del SVE?', 'a' => 'De forma trimestral por defecto. Para empresas con riesgo alto, ofrecemos cadencia mensual sin costo adicional. Las alertas críticas son inmediatas.'],
+    ['q' => '¿Quién recibe las alertas del sistema?', 'a' => 'Tu empresa define la matriz de escalamiento: usualmente la coordinación de talento humano para alertas amarillas y comité paritario o gerencia para alertas rojas.'],
+    ['q' => '¿Necesito personal técnico para usar la plataforma del SVE?', 'a' => 'No. La plataforma es operada por tu equipo de talento humano. PsyRisk hace la implementación, capacita al equipo y deja un manual operativo.'],
+    ['q' => '¿El SVE me sirve si todavía no he aplicado la batería?', 'a' => 'El SVE arranca con datos. Si todavía no has aplicado la batería, lo recomendable es empezar con ella para tener línea base, luego activamos el SVE sobre los hallazgos.'],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <!-- =================== PAGE HERO =================== -->

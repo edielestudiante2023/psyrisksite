@@ -1,5 +1,13 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',   'url' => base_url('/')],
+    ['name' => 'Contacto', 'url' => base_url('contacto')],
+]]) ?>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contacto · PsyRisk","url":"<?= base_url('contacto') ?>","description":"Habla con un asesor de PsyRisk para solicitar demo, cotización o resolver dudas sobre la batería de riesgo psicosocial, vigilancia epidemiológica o capacitaciones."}</script>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

@@ -1,12 +1,110 @@
+<?php
+$pageTitle       = $title       ?? 'PsyRisk - Batería de Riesgo Psicosocial';
+$pageDescription = $description ?? 'Plataforma para evaluar, vigilar y gestionar el riesgo psicosocial conforme a la Resolución 2764 de 2022 en Colombia.';
+$canonical       = base_url(uri_string());
+$ogImage         = $ogImage ?? base_url('assets/img/icons/icon-512.png');
+$ogType          = $ogType  ?? 'website';
+$keywords        = $keywords ?? 'batería de riesgo psicosocial, resolución 2764, riesgo psicosocial, evaluación psicosocial Colombia, SG-SST, clima organizacional';
+
+$organizationLd = [
+    '@context'      => 'https://schema.org',
+    '@type'         => 'Organization',
+    'name'          => 'PsyRisk',
+    'alternateName' => 'PsyRisk - Batería de Riesgo Psicosocial',
+    'url'           => base_url('/'),
+    'logo'          => base_url('assets/img/logo_psirysk.png'),
+    'description'   => 'Plataforma para evaluar, vigilar y gestionar el riesgo psicosocial conforme a la Resolución 2764 de 2022 en Colombia.',
+    'parentOrganization' => [
+        '@type' => 'Organization',
+        'name'  => 'Cycloid Talent',
+    ],
+    'address' => [
+        '@type'           => 'PostalAddress',
+        'streetAddress'   => 'Tv. 24B #17-209',
+        'addressLocality' => 'Soacha',
+        'addressRegion'   => 'Cundinamarca',
+        'addressCountry'  => 'CO',
+    ],
+    'contactPoint' => [
+        '@type'             => 'ContactPoint',
+        'telephone'         => '+57-322-907-4371',
+        'email'             => 'diana.cuestas@cycloidtalent.com',
+        'contactType'       => 'sales',
+        'areaServed'        => 'CO',
+        'availableLanguage' => ['Spanish'],
+    ],
+    'sameAs' => [
+        'https://www.facebook.com/CycloidTalent',
+        'https://co.linkedin.com/company/cycloid-talent',
+        'https://www.instagram.com/cycloid_talent',
+        'https://www.tiktok.com/@cycloid_talent',
+    ],
+];
+?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?= esc($description ?? 'PsyRisk - Batería de Riesgo Psicosocial conforme Resolución 2764 de 2022.') ?>">
-    <title><?= esc($title ?? 'PsyRisk - Batería de Riesgo Psicosocial') ?></title>
-    <link rel="icon" type="image/png" href="<?= base_url('assets/img/logo_psirysk.png') ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title><?= esc($pageTitle) ?></title>
+    <meta name="description" content="<?= esc($pageDescription) ?>">
+    <meta name="keywords" content="<?= esc($keywords) ?>">
+    <meta name="author" content="Cycloid Talent">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="<?= esc($canonical) ?>">
+
+    <!-- Geo (Colombia) -->
+    <meta name="geo.region" content="CO-CUN">
+    <meta name="geo.placename" content="Soacha, Cundinamarca">
+    <meta name="geo.position" content="4.5790;-74.2167">
+    <meta name="ICBM" content="4.5790, -74.2167">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:type" content="<?= esc($ogType) ?>">
+    <meta property="og:title" content="<?= esc($pageTitle) ?>">
+    <meta property="og:description" content="<?= esc($pageDescription) ?>">
+    <meta property="og:url" content="<?= esc($canonical) ?>">
+    <meta property="og:site_name" content="PsyRisk">
+    <meta property="og:image" content="<?= esc($ogImage) ?>">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="PsyRisk - Batería de Riesgo Psicosocial">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= esc($pageTitle) ?>">
+    <meta name="twitter:description" content="<?= esc($pageDescription) ?>">
+    <meta name="twitter:image" content="<?= esc($ogImage) ?>">
+
+    <!-- PWA: manifest y tema -->
+    <link rel="manifest" href="<?= base_url('manifest.webmanifest') ?>">
+    <meta name="theme-color" content="#3B6FB5">
+    <meta name="application-name" content="PsyRisk">
+
+    <!-- iOS / Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PsyRisk">
+    <link rel="apple-touch-icon" href="<?= base_url('assets/img/icons/apple-touch-icon.png') ?>">
+
+    <!-- Windows Tile -->
+    <meta name="msapplication-TileColor" content="#3B6FB5">
+    <meta name="msapplication-TileImage" content="<?= base_url('assets/img/icons/icon-144.png') ?>">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/icons/favicon-32.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/icons/favicon-16.png') ?>">
+    <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>">
+
     <link rel="stylesheet" href="<?= base_url('assets/css/psyrisk.css') ?>">
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json"><?= json_encode($organizationLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
+
+    <?= $this->renderSection('jsonld') ?>
     <?= $this->renderSection('head') ?>
 </head>
 <body>
@@ -19,7 +117,8 @@
     <?= view('partials/footer') ?>
     <?= view('partials/whatsapp') ?>
 
-    <script src="<?= base_url('assets/js/psyrisk.js') ?>"></script>
+    <script src="<?= base_url('assets/js/psyrisk.js') ?>" defer></script>
+    <script src="<?= base_url('assets/js/pwa.js') ?>" defer></script>
     <?= $this->renderSection('scripts') ?>
 </body>
 </html>

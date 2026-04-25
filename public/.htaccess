@@ -47,3 +47,35 @@ Options -Indexes
 # Disable server signature start
 ServerSignature Off
 # Disable server signature end
+
+# ----------------------------------------------------------------------
+# PWA - Service Worker, Manifest y assets cacheables
+# ----------------------------------------------------------------------
+
+# MIME types correctos para manifest y service worker
+<IfModule mod_mime.c>
+    AddType application/manifest+json .webmanifest
+    AddType text/cache-manifest .appcache
+    AddType application/javascript .js
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Estáticos con caché agresiva (el SW se encarga de invalidar versiones).
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp|ico|woff2?|ttf|eot)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+
+    # Manifest: revalidación frecuente.
+    <FilesMatch "\.webmanifest$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+
+    # Service Worker: NUNCA cachear y permitir scope amplio.
+    # Esta regla va al final para sobrescribir la genérica de estáticos.
+    <FilesMatch "^sw\.js$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+        Header set Service-Worker-Allowed "/"
+    </FilesMatch>
+</IfModule>

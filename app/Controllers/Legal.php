@@ -8,7 +8,7 @@ class Legal extends BaseController
     {
         return view('pages/legal/privacidad', [
             'title'       => 'Política de Privacidad · PsyRisk',
-            'description' => 'Política de tratamiento de datos personales de PsyRisk conforme a la Ley 1581 de 2012.',
+            'description' => 'Política de tratamiento de datos personales de PsyRisk conforme a la Ley 1581 de 2012 de Colombia. Derechos del titular y procedimiento para ejercerlos.',
             'activeNav'   => '',
         ]);
     }
@@ -17,7 +17,7 @@ class Legal extends BaseController
     {
         return view('pages/legal/terminos', [
             'title'       => 'Términos y Condiciones · PsyRisk',
-            'description' => 'Términos y condiciones de uso del sitio web PsyRisk y de los servicios ofrecidos.',
+            'description' => 'Términos y condiciones de uso del sitio web PsyRisk de Cycloid Talent. Naturaleza, propiedad intelectual, servicios profesionales y limitación de responsabilidad.',
             'activeNav'   => '',
         ]);
     }

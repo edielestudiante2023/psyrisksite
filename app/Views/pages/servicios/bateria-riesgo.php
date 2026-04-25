@@ -1,5 +1,27 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                       'url' => base_url('/')],
+    ['name' => 'Servicios',                    'url' => base_url('/#servicios')],
+    ['name' => 'Batería de Riesgo Psicosocial','url' => base_url('servicios/bateria-riesgo')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Batería de Riesgo Psicosocial',
+    'description' => 'Aplicación digital de la batería oficial Forma A y B conforme a la Resolución 2764 de 2022 con tabulación automática, informe ejecutivo, vigilancia epidemiológica y plan de intervención.',
+    'url'         => base_url('servicios/bateria-riesgo'),
+    'serviceType' => 'Evaluación de riesgo psicosocial',
+]) ?>
+<?= view('partials/jsonld-faq', ['faqs' => [
+    ['q' => '¿La aplicación digital de la batería es válida ante el Ministerio del Trabajo de Colombia?', 'a' => 'Sí. La Resolución 2764 de 2022 no exige modalidad presencial; exige que la aplicación sea realizada por psicólogo con licencia en SST y que los resultados queden documentados. PsyRisk cumple ambos requisitos.'],
+    ['q' => '¿Cada cuánto debo aplicar la batería de riesgo psicosocial?', 'a' => 'La normativa establece reaplicación cada 1 año si la última evaluación arrojó nivel de riesgo alto o muy alto, y cada 2 años si el resultado fue bajo, medio o sin riesgo.'],
+    ['q' => '¿Quién puede acceder a los resultados individuales de la batería?', 'a' => 'Únicamente el psicólogo responsable del estudio. La empresa solo recibe resultados agregados por área, cargo o sociodemografía. PsyRisk cumple la Ley 1581 de Habeas Data.'],
+    ['q' => '¿Qué sucede si un colaborador no responde la batería?', 'a' => 'Se reporta como no participación documentando el intento. PsyRisk genera el log de aplicación y los recordatorios automáticamente.'],
+    ['q' => '¿Cuánto tarda el proceso completo de la batería con PsyRisk?', 'a' => 'Para una empresa de hasta 80 colaboradores el proceso completo (alistamiento + aplicación + entrega del informe) toma 14 días hábiles.'],
+    ['q' => '¿La ARL no debería aplicarme la batería gratis?', 'a' => 'La ARL puede ofrecerlo, pero suele tener tiempos de espera de 3 a 6 meses, entrega un informe genérico y no incluye plan de intervención ni vigilancia continua. PsyRisk garantiza tiempos cortos, entregables ricos y acompañamiento real.'],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <!-- =================== PAGE HERO =================== -->

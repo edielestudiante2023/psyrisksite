@@ -9,8 +9,9 @@ class Contacto extends BaseController
     public function index(): string
     {
         $data = [
-            'title'       => 'Contacto · PsyRisk',
-            'description' => 'Habla con un asesor de PsyRisk. Solicita demo, cotización o aclara cualquier duda sobre la batería, el SVE o las capacitaciones.',
+            'title'       => 'Contacto · Solicita Demo o Cotización · PsyRisk',
+            'description' => 'Habla con un asesor de PsyRisk para solicitar demo gratuita, cotización de batería de riesgo psicosocial o resolver dudas. Respuesta en menos de 24 horas hábiles.',
+            'keywords'    => 'contacto PsyRisk, cotización batería psicosocial, demo evaluación psicosocial',
             'activeNav'   => 'contacto',
             'errors'      => session()->getFlashdata('errors') ?? [],
             'old'         => session()->getFlashdata('old') ?? [],
@@ -54,7 +55,7 @@ class Contacto extends BaseController
     public function gracias(): string
     {
         $data = [
-            'title'       => '¡Gracias! · PsyRisk',
+            'title'       => 'Gracias por escribirnos · PsyRisk',
             'description' => 'Recibimos tu mensaje. Un asesor de PsyRisk se pondrá en contacto contigo en menos de 24 horas hábiles.',
             'activeNav'   => 'contacto',
         ];

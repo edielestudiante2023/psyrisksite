@@ -7,8 +7,9 @@ class Home extends BaseController
     public function index(): string
     {
         $data = [
-            'title'       => 'PsyRisk - Batería de Riesgo Psicosocial',
-            'description' => 'Evalúa, monitorea y gestiona el riesgo psicosocial de tu empresa con tecnología, automatización y cumplimiento de la Resolución 2764 de 2022.',
+            'title'       => 'Batería de Riesgo Psicosocial Colombia · Resolución 2764 · PsyRisk',
+            'description' => 'Aplicación digital de la batería de riesgo psicosocial conforme Resolución 2764 de 2022. Tabulación automática, vigilancia epidemiológica y plan de intervención.',
+            'keywords'    => 'batería de riesgo psicosocial, resolución 2764, evaluación psicosocial, riesgo psicosocial Colombia, SG-SST',
             'activeNav'   => 'home',
         ];
 

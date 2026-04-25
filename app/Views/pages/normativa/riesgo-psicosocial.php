@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',             'url' => base_url('/')],
+    ['name' => 'Recursos',           'url' => base_url('recursos')],
+    ['name' => 'Riesgo Psicosocial', 'url' => base_url('normativa/riesgo-psicosocial')],
+]]) ?>
+<?= view('partials/jsonld-article', [
+    'headline'    => 'Riesgo Psicosocial — qué es y por qué importa',
+    'description' => 'Qué es el riesgo psicosocial, factores intra y extralaborales, consecuencias para la empresa y cómo se gestiona profesionalmente.',
+    'url'         => base_url('normativa/riesgo-psicosocial'),
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

@@ -1,5 +1,27 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',          'url' => base_url('/')],
+    ['name' => 'Servicios',       'url' => base_url('/#servicios')],
+    ['name' => 'Capacitaciones',  'url' => base_url('servicios/capacitaciones')],
+]]) ?>
+<?= view('partials/jsonld-service', [
+    'name'        => 'Capacitaciones en bienestar laboral y liderazgo',
+    'description' => 'Capacitaciones en liderazgo saludable, manejo del estrés, prevención del agotamiento laboral, comunicación asertiva y bienestar emocional. Diseñadas por psicólogos certificados con medición de impacto.',
+    'url'         => base_url('servicios/capacitaciones'),
+    'serviceType' => 'Formación en bienestar laboral',
+]) ?>
+<?= view('partials/jsonld-faq', ['faqs' => [
+    ['q' => '¿Las capacitaciones cuentan para el cumplimiento del SG-SST?', 'a' => 'Sí. Las capacitaciones de PsyRisk se entregan con certificado individual, lista de asistencia firmada y registro fotográfico. La evidencia es válida ante Mintrabajo o ARL.'],
+    ['q' => '¿Las dicta siempre la misma persona?', 'a' => 'No necesariamente. Asignamos al psicólogo más afín al sector y al tema. Puedes solicitar continuidad de facilitador para programas largos.'],
+    ['q' => '¿Puedo armar un programa a la medida con varios temas?', 'a' => 'Sí. Lo común es combinar 2 o 3 programas en una ruta de 12 a 16 sesiones distribuida a lo largo de 3 a 6 meses.'],
+    ['q' => '¿Qué pasa si tengo personal en regiones lejanas?', 'a' => 'Recomendamos formato virtual o mixto. Para grupos exclusivamente regionales hacemos cotización con viáticos.'],
+    ['q' => '¿Sirven las capacitaciones para cumplir la formación obligatoria contra el acoso laboral (Ley 1010)?', 'a' => 'Sí. El programa Prevención del acoso laboral cumple con los lineamientos de la Ley 1010 y entrega certificación válida ante auditoría.'],
+    ['q' => '¿Hay un mínimo de personas para abrir un programa de capacitación?', 'a' => 'Sí: 8 personas para grupo cerrado. Empresas más pequeñas pueden vincularse a un grupo abierto compartido con otras empresas.'],
+]]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <!-- =================== PAGE HERO =================== -->

@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                  'url' => base_url('/')],
+    ['name' => 'Recursos',                'url' => base_url('recursos')],
+    ['name' => 'Resolución 2764 de 2022', 'url' => base_url('normativa/resolucion-2764')],
+]]) ?>
+<?= view('partials/jsonld-article', [
+    'headline'    => 'Resolución 2764 de 2022 — guía explicada',
+    'description' => 'Qué dice la Resolución 2764 de 2022 sobre la batería de riesgo psicosocial, qué cambió frente a la 2646 y cómo cumplirla en tu empresa colombiana.',
+    'url'         => base_url('normativa/resolucion-2764'),
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

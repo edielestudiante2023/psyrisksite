@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',                       'url' => base_url('/')],
+    ['name' => 'Recursos',                     'url' => base_url('recursos')],
+    ['name' => 'Batería Psicosocial Colombia', 'url' => base_url('normativa/bateria-psicosocial-colombia')],
+]]) ?>
+<?= view('partials/jsonld-article', [
+    'headline'    => 'Batería Psicosocial Colombia — guía explicada',
+    'description' => 'Qué es la batería psicosocial colombiana, sus formas A y B, dimensiones, niveles de riesgo y qué entrega un informe profesional completo.',
+    'url'         => base_url('normativa/bateria-psicosocial-colombia'),
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">

@@ -1,5 +1,18 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('jsonld') ?>
+<?= view('partials/jsonld-breadcrumb', ['items' => [
+    ['name' => 'Inicio',           'url' => base_url('/')],
+    ['name' => 'Recursos',         'url' => base_url('recursos')],
+    ['name' => 'Ley 1581 de 2012', 'url' => base_url('normativa/ley-1581')],
+]]) ?>
+<?= view('partials/jsonld-article', [
+    'headline'    => 'Ley 1581 de 2012 — Habeas Data en evaluaciones psicosociales',
+    'description' => 'Ley colombiana de protección de datos personales, datos sensibles, derechos del titular y aplicación específica en la batería de riesgo psicosocial.',
+    'url'         => base_url('normativa/ley-1581'),
+]) ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-hero">
