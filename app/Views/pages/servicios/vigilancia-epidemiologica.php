@@ -45,7 +45,7 @@
         <p class="lead">El Sistema de Vigilancia Epidemiológica (SVE) Psicosocial transforma una evaluación puntual en un proceso vivo. PsyRisk mantiene activos los indicadores, dispara alertas cuando un dominio se desvía y documenta cada acción para auditoría.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="btn btn-primary btn-lg">Activar SVE en mi empresa</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Activar SVE en mi empresa</a>
             <a href="#como-funciona" class="btn btn-outline btn-lg">Cómo funciona</a>
         </div>
     </div>
@@ -364,7 +364,7 @@
         <h2>Conviértelo en un proceso vivo, no en un PDF olvidado</h2>
         <p>Las empresas que sostienen el SVE reducen ausentismo psicosocial, retienen talento y pasan auditorías sin sobresaltos. Empieza hoy.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="#" class="btn btn-primary btn-lg">Activar SVE</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Activar SVE</a>
             <a href="<?= base_url('servicios/planes-intervencion') ?>" class="btn btn-outline btn-lg">Ver Planes de Intervención</a>
         </div>
     </div>

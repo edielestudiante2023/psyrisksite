@@ -66,8 +66,10 @@
         </nav>
 
         <div class="header-actions">
-            <a href="#" class="btn btn-ghost">Iniciar sesión</a>
-            <a href="#" class="btn btn-primary">Solicitar Demo</a>
+            <a href="https://wa.me/573229074371?text=Hola,%20quiero%20solicitar%20una%20demo%20de%20PsyRisk"
+               target="_blank"
+               rel="noopener"
+               class="btn btn-primary">Solicitar Demo</a>
         </div>
     </div>
 </header>

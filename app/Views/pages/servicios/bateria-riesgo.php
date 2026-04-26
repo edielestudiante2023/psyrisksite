@@ -46,7 +46,7 @@
         <p class="lead">Aplicamos el instrumento oficial validado por el Ministerio del Trabajo de Colombia. PsyRisk digitaliza el proceso completo: aplicación, tabulación, informe oficial, vigilancia epidemiológica y plan de intervención — todo desde una sola plataforma.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
             <a href="#como-funciona" class="btn btn-outline btn-lg">Ver cómo funciona</a>
         </div>
     </div>
@@ -277,7 +277,7 @@
                 <h3>¿Cuántos colaboradores tiene tu empresa?</h3>
                 <p>Te enviamos cotización personalizada en menos de 24 horas hábiles.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
         </div>
     </div>
 </section>
@@ -337,7 +337,7 @@
         <h2>Cumple, evalúa y gestiona — todo desde una sola plataforma</h2>
         <p>Más de un instrumento legal: PsyRisk es la infraestructura que tu empresa necesita para convertir el riesgo psicosocial en datos accionables.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
             <a href="<?= base_url('precios') ?>" class="btn btn-outline btn-lg">Ver precios</a>
         </div>
     </div>

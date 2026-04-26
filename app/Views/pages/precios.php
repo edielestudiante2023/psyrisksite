@@ -33,8 +33,8 @@
         <p class="lead">Pagas cuando aplicas. Sin contratos anuales obligatorios, sin sorpresas. La normativa exige reaplicar cada 1 o 2 años — tu inversión también dura ese tiempo.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar cotización</a>
-            <a href="<?= base_url('contacto') ?>" class="btn btn-outline btn-lg">Hablar con un asesor</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Hablar con un asesor</a>
         </div>
     </div>
 </section>
@@ -61,7 +61,7 @@
                     <li>Plan de intervención priorizado</li>
                     <li>Acompañamiento de psicólogo certificado</li>
                 </ul>
-                <a href="#" class="btn btn-outline">Cotizar</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline">Cotizar</a>
             </div>
 
             <div class="price-card popular">
@@ -77,7 +77,7 @@
                     <li>Acompañamiento extendido</li>
                     <li>Pulsos cortos trimestrales</li>
                 </ul>
-                <a href="#" class="btn btn-secondary">Cotizar</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-secondary">Cotizar</a>
             </div>
 
             <div class="price-card">
@@ -92,7 +92,7 @@
                     <li>Tablero comparativo por segmento</li>
                     <li>Recomendaciones accionables</li>
                 </ul>
-                <a href="#" class="btn btn-outline">Cotizar</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline">Cotizar</a>
             </div>
         </div>
     </div>
@@ -249,7 +249,7 @@
         <h2>¿Cuántos trabajadores tiene tu empresa?</h2>
         <p>Te enviamos cotización formal en menos de 24 horas hábiles, ajustada a tu sector y región.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
         </div>
     </div>
 </section>

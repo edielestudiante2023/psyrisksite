@@ -145,7 +145,7 @@
         <h2>¿Tu empresa quiere hacerlo bien?</h2>
         <p>Solicita una conversación con nuestro equipo. 30 minutos para entender tu contexto y proponer la ruta más sencilla.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Hablar con nosotros</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Hablar con nosotros</a>
         </div>
     </div>
 </section>

@@ -14,7 +14,7 @@
                 <h1>El riesgo psicosocial deja de ser un PDF y se vuelve <span class="accent">infraestructura</span></h1>
                 <p class="lead">PsyRisk reúne en una sola plataforma la batería oficial, la vigilancia epidemiológica, los planes de intervención y el clima organizacional. Cumple, decide y actúa con datos, no con suposiciones.</p>
                 <div class="hero-ctas">
-                    <a href="#" class="btn btn-primary btn-lg">Solicitar demo gratis</a>
+                    <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar demo gratis</a>
                     <a href="#ruta" class="btn btn-outline btn-lg">Conocer la ruta</a>
                 </div>
                 <div class="hero-meta">
@@ -365,8 +365,8 @@
         <h2>Empieza el ciclo hoy — el siguiente reporte llega solo</h2>
         <p>30 minutos contigo bastan para mostrarte cómo funciona la batería, el SVE y el plan de intervención aplicados a una empresa como la tuya.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar demo gratis</a>
-            <a href="<?= base_url('contacto') ?>" class="btn btn-outline btn-lg">Hablar con un asesor</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar demo gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Hablar con un asesor</a>
         </div>
     </div>
 </section>

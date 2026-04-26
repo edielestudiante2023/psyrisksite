@@ -36,7 +36,7 @@
         <p class="lead">Tu cliente entra a tudominio.com, ve tu logo, recibe los reportes con tu firma y nunca se entera de que la tecnología la opera PsyRisk. Tú mantienes el vínculo profesional al 100%.</p>
 
         <div class="hero-ctas">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Solicitar demo de Marca Propia</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar demo de Marca Propia</a>
         </div>
     </div>
 </section>
@@ -127,7 +127,7 @@
                     <li>Personalización de plantillas de reporte</li>
                     <li>Capacitación de equipo</li>
                 </ul>
-                <a href="<?= base_url('contacto') ?>" class="btn btn-outline">Cotizar</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline">Cotizar</a>
             </div>
 
             <div class="price-card popular">
@@ -140,7 +140,7 @@
                     <li>Gestión del subdominio</li>
                     <li>Tarifa mayorista por aplicación aparte</li>
                 </ul>
-                <a href="<?= base_url('contacto') ?>" class="btn btn-secondary">Cotizar</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-secondary">Cotizar</a>
             </div>
 
             <div class="price-card">
@@ -153,7 +153,7 @@
                     <li>Margen 100% tuyo sobre lo que cobres</li>
                     <li>Sin tope de aplicaciones por año</li>
                 </ul>
-                <a href="<?= base_url('contacto') ?>" class="btn btn-outline">Ver tarifas</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline">Ver tarifas</a>
             </div>
         </div>
     </div>
@@ -164,7 +164,7 @@
         <h2>Lleva tu consultoría al siguiente nivel</h2>
         <p>Conversemos sobre tu cartera, tu propuesta de valor y cómo PsyRisk Marca Propia puede multiplicarla.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Solicitar demo personalizada</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar demo personalizada</a>
         </div>
     </div>
 </section>

@@ -45,7 +45,7 @@
         <p class="lead">Un buen diagnóstico sin un plan ejecutable es papel mojado. PsyRisk transforma cada hallazgo de la batería y del SVE en planes con responsable, plazo, evidencia y métrica de cierre.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="btn btn-primary btn-lg">Cotizar plan a la medida</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Cotizar plan a la medida</a>
             <a href="#catalogo" class="btn btn-outline btn-lg">Ver catálogo de intervenciones</a>
         </div>
     </div>
@@ -368,7 +368,7 @@
                 <h3>Tus hallazgos merecen un plan que se ejecute</h3>
                 <p>Cotizamos plan a la medida sobre los resultados de tu última batería o SVE.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
         </div>
     </div>
 </section>
@@ -422,7 +422,7 @@
         <h2>Convierte el diagnóstico en cambio real — no en otro PDF olvidado</h2>
         <p>Diseñamos el plan, capacitamos al equipo, registramos la evidencia y verificamos el impacto. Cierre del ciclo, sin medias tintas.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="#" class="btn btn-primary btn-lg">Cotizar mi plan</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Cotizar mi plan</a>
             <a href="<?= base_url('servicios/capacitaciones') ?>" class="btn btn-outline btn-lg">Ver capacitaciones</a>
         </div>
     </div>

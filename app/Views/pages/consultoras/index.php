@@ -33,7 +33,7 @@
         <p class="lead">Si eres psicólogo consultor independiente o tienes una firma de consultoría en SST, PsyRisk te entrega la plataforma para que ofrezcas batería, clima y vigilancia con tecnología profesional. Tú pones el conocimiento y la relación; nosotros la infraestructura.</p>
 
         <div class="hero-ctas">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Postular al programa</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Postular al programa</a>
             <a href="<?= base_url('consultoras/como-funciona') ?>" class="btn btn-outline btn-lg">Ver cómo funciona</a>
         </div>
     </div>
@@ -111,7 +111,7 @@
         <h2>Postula al programa de consultores</h2>
         <p>Recibimos solicitudes con perfil profesional y trayectoria. Te respondemos en 3 días hábiles con propuesta de vinculación.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Quiero postular</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quiero postular</a>
             <a href="<?= base_url('consultoras/precios') ?>" class="btn btn-outline btn-lg">Ver precios para consultores</a>
         </div>
     </div>

@@ -114,7 +114,7 @@
         <h2>¿Calculas tu plan ideal?</h2>
         <p>Conversemos sobre tu volumen actual y proyectado, y armemos juntos el esquema más conveniente.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Hablar con un asesor</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Hablar con un asesor</a>
         </div>
     </div>
 </section>

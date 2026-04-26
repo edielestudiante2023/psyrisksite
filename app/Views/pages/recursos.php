@@ -61,7 +61,7 @@
                 <p>Cómo proteger datos personales en evaluaciones psicosociales y qué derechos tiene cada trabajador.</p>
                 <span class="read-more">Leer guía →</span>
             </a>
-            <a href="<?= base_url('contacto') ?>" class="res-card">
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="res-card">
                 <span class="pill-cat">Asesoría</span>
                 <h4>¿Necesitas asesoría puntual?</h4>
                 <p>Habla con nuestro equipo profesional. Resolvemos dudas concretas sobre obligaciones, plazos y procedimientos.</p>
@@ -76,7 +76,7 @@
         <h2>¿Quieres recibir nuevas guías cuando las publiquemos?</h2>
         <p>Escríbenos y te avisamos cuando publiquemos contenido nuevo sobre normativa y buenas prácticas.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Suscribirme</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Suscribirme</a>
         </div>
     </div>
 </section>

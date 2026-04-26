@@ -81,7 +81,7 @@
         <h2>¿Listo para postular?</h2>
         <p>Estamos buscando psicólogos profesionales con vocación clínica y mentalidad emprendedora.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="<?= base_url('contacto') ?>" class="btn btn-primary btn-lg">Postular ahora</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Postular ahora</a>
         </div>
     </div>
 </section>

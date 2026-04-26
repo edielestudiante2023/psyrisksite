@@ -46,7 +46,7 @@
         <p class="lead">Diseñadas por psicólogos certificados, dictadas en vivo y conectadas a los hallazgos reales de tu empresa. No son charlas motivacionales — son procesos formativos con medición de impacto.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar agenda y precios</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar agenda y precios</a>
             <a href="#catalogo" class="btn btn-outline btn-lg">Ver catálogo</a>
         </div>
     </div>
@@ -353,7 +353,7 @@
                 <h3>Capacitaciones desde 650.000 COP por sesión grupal</h3>
                 <p>Hasta 30 personas por sesión. Programas completos con descuento por volumen.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
         </div>
     </div>
 </section>
@@ -413,7 +413,7 @@
         <h2>Forma a tu equipo con contenido que sí se sostiene en el tiempo</h2>
         <p>Solicita una conversación con uno de nuestros psicólogos para diseñar la ruta formativa que se ajuste al momento de tu empresa.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="#" class="btn btn-primary btn-lg">Hablar con un asesor</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Hablar con un asesor</a>
             <a href="<?= base_url('precios') ?>" class="btn btn-outline btn-lg">Ver precios</a>
         </div>
     </div>

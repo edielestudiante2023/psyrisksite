@@ -45,7 +45,7 @@
         <p class="lead">El clima organizacional anticipa la rotación, la productividad y los conflictos antes de que aparezcan en los indicadores duros. PsyRisk lo mide con anonimato garantizado, segmentación rica y planes de mejora ejecutables.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar diagnóstico</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar diagnóstico</a>
             <a href="#dimensiones" class="btn btn-outline btn-lg">Ver qué medimos</a>
         </div>
     </div>
@@ -124,7 +124,7 @@
                 <h2>Escala de 5 niveles con redacción cuidada</h2>
                 <p>Tus colaboradores responden afirmaciones cortas en una escala de 5 puntos. Las preguntas están redactadas para evitar sesgo de deseabilidad social y respuesta automática.</p>
                 <p>Cada cuestionario toma entre <strong>10 y 15 minutos</strong> y se puede responder desde cualquier dispositivo. Los enlaces son únicos por persona, pero las respuestas son <strong>completamente anónimas</strong> a nivel individual.</p>
-                <a href="#" class="btn btn-primary">Ver formulario de demostración</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary">Ver formulario de demostración</a>
             </div>
 
             <div class="split-visual" style="background:#fff;">
@@ -257,7 +257,7 @@
                 <h3>Diagnóstico desde 1.200.000 COP — incluye capacitaciones</h3>
                 <p>Para empresas de 1 a 50 colaboradores. Empresas más grandes, cotización a la medida.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
         </div>
     </div>
 </section>
@@ -311,7 +311,7 @@
         <h2>Mide hoy el clima — toma decisiones con datos mañana</h2>
         <p>Combina Clima Organizacional con la Batería de Riesgo Psicosocial y obtén una vista completa de la salud cultural y normativa de tu empresa.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="#" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
             <a href="<?= base_url('servicios/bateria-riesgo') ?>" class="btn btn-outline btn-lg">Ver Batería Psicosocial</a>
         </div>
     </div>
