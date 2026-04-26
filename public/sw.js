@@ -9,7 +9,7 @@
  * la app vive en la raíz (/) como en un subdirectorio (/psyrisksite/public/).
  */
 
-const VERSION = 'psyrisk-v1.0.2';
+const VERSION = 'psyrisk-v1.0.3';
 const PRECACHE = `${VERSION}-precache`;
 const RUNTIME_HTML = `${VERSION}-html`;
 const RUNTIME_STATIC = `${VERSION}-static`;

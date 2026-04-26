@@ -6,6 +6,9 @@ $ogImage         = $ogImage ?? base_url('assets/img/icons/icon-512.png');
 $ogType          = $ogType  ?? 'website';
 $keywords        = $keywords ?? 'batería de riesgo psicosocial, resolución 2764, riesgo psicosocial, evaluación psicosocial Colombia, SG-SST, clima organizacional';
 
+// Versionado de assets para invalidar caches (browser, CDN, SW) en cada release.
+$assetVer = '2';
+
 $organizationLd = [
     '@context'      => 'https://schema.org',
     '@type'         => 'Organization',
@@ -102,7 +105,7 @@ $organizationLd = [
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/icons/favicon-16.png') ?>">
     <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>">
 
-    <link rel="stylesheet" href="<?= base_url('assets/css/psyrisk.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/psyrisk.css') ?>?v=<?= $assetVer ?>">
 
     <!-- JSON-LD: Organization -->
     <script type="application/ld+json"><?= json_encode($organizationLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
@@ -120,8 +123,8 @@ $organizationLd = [
     <?= view('partials/footer') ?>
     <?= view('partials/whatsapp') ?>
 
-    <script src="<?= base_url('assets/js/psyrisk.js') ?>" defer></script>
-    <script src="<?= base_url('assets/js/pwa.js') ?>" defer></script>
+    <script src="<?= base_url('assets/js/psyrisk.js') ?>?v=<?= $assetVer ?>" defer></script>
+    <script src="<?= base_url('assets/js/pwa.js') ?>?v=<?= $assetVer ?>" defer></script>
     <?= $this->renderSection('scripts') ?>
 </body>
 </html>
