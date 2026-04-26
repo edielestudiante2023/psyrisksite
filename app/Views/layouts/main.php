@@ -47,6 +47,9 @@ $organizationLd = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
+    <!-- Google Search Console verification -->
+    <meta name="google-site-verification" content="tGfrKoq0CsfwItQ3bQYWhE7_dLeDy6HOq3K5yQSZJwA">
+
     <title><?= esc($pageTitle) ?></title>
     <meta name="description" content="<?= esc($pageDescription) ?>">
     <meta name="keywords" content="<?= esc($keywords) ?>">

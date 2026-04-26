@@ -31,7 +31,7 @@
         var items = document.querySelectorAll('.main-nav .nav-item.has-dropdown');
 
         items.forEach(function (item) {
-            var trigger = item.querySelector('button, > a');
+            var trigger = item.querySelector(':scope > button, :scope > a');
             if (!trigger) return;
 
             trigger.addEventListener('click', function (e) {
