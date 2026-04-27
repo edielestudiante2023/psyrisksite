@@ -7,7 +7,7 @@ $ogType          = $ogType  ?? 'website';
 $keywords        = $keywords ?? 'batería de riesgo psicosocial, resolución 2764, riesgo psicosocial, evaluación psicosocial Colombia, SG-SST, clima organizacional';
 
 // Versionado de assets para invalidar caches (browser, CDN, SW) en cada release.
-$assetVer = '4';
+$assetVer = '5';
 
 $organizationLd = [
     '@context'      => 'https://schema.org',
@@ -94,16 +94,17 @@ $organizationLd = [
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="PsyRisk">
-    <link rel="apple-touch-icon" href="<?= base_url('assets/img/icons/apple-touch-icon.png') ?>">
+    <link rel="apple-touch-icon" href="<?= base_url('assets/img/icons/apple-touch-icon.png') ?>?v=<?= $assetVer ?>">
 
     <!-- Windows Tile -->
     <meta name="msapplication-TileColor" content="#3B6FB5">
-    <meta name="msapplication-TileImage" content="<?= base_url('assets/img/icons/icon-144.png') ?>">
+    <meta name="msapplication-TileImage" content="<?= base_url('assets/img/icons/icon-144.png') ?>?v=<?= $assetVer ?>">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/icons/favicon-32.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/icons/favicon-16.png') ?>">
-    <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>">
+    <link rel="icon" type="image/x-icon" href="<?= base_url('favicon.ico') ?>?v=<?= $assetVer ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/icons/favicon-32.png') ?>?v=<?= $assetVer ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/icons/favicon-16.png') ?>?v=<?= $assetVer ?>">
+    <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>?v=<?= $assetVer ?>">
 
     <link rel="stylesheet" href="<?= base_url('assets/css/psyrisk.css') ?>?v=<?= $assetVer ?>">
 
