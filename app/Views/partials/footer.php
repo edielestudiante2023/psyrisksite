@@ -47,6 +47,7 @@
                     <li><a href="<?= base_url('nosotros') ?>">Nosotros</a></li>
                     <li><a href="<?= base_url('contacto') ?>">Contacto</a></li>
                     <li><a href="<?= base_url('recursos') ?>">Recursos</a></li>
+                    <li><a href="https://cycloidtalent.com/blog" target="_blank" rel="noopener">Blog</a></li>
                 </ul>
                 <h4 style="margin-top: 24px;">Contáctanos</h4>
                 <p class="footer-contact"><a href="mailto:diana.cuestas@cycloidtalent.com">diana.cuestas@cycloidtalent.com</a></p>

@@ -33,9 +33,10 @@
         <p class="lead">Si eres psicólogo consultor independiente o tienes una firma de consultoría en SST, PsyRisk te entrega la plataforma para que ofrezcas batería, clima y vigilancia con tecnología profesional. Tú pones el conocimiento y la relación; nosotros la infraestructura.</p>
 
         <div class="hero-ctas">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Postular al programa</a>
-            <a href="<?= base_url('consultoras/como-funciona') ?>" class="btn btn-outline btn-lg">Ver cómo funciona</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta como consultora</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Postular al programa</a>
         </div>
+        <p style="margin-top:10px; font-size:.85rem; color:var(--color-muted);">14 días gratis · sin tarjeta · prueba con tus propios clientes</p>
     </div>
 </section>
 
@@ -108,11 +109,12 @@
 
 <section class="cta-final">
     <div class="container">
-        <h2>Postula al programa de consultores</h2>
-        <p>Recibimos solicitudes con perfil profesional y trayectoria. Te respondemos en 3 días hábiles con propuesta de vinculación.</p>
+        <h2>Empieza con tus propios clientes hoy</h2>
+        <p>Crea tu cuenta gratis y explora la plataforma con clientes reales en 14 días, o postula al programa formal de consultoras con marca propia.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quiero postular</a>
-            <a href="<?= base_url('consultoras/precios') ?>" class="btn btn-outline btn-lg">Ver precios para consultores</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Postular al programa</a>
+            <a href="<?= base_url('consultoras/precios') ?>" class="btn btn-ghost btn-lg">Ver precios</a>
         </div>
     </div>
 </section>

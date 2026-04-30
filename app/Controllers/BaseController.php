@@ -30,7 +30,7 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
-    protected $helpers = ['url', 'form'];
+    protected $helpers = ['url', 'form', 'marketing'];
 
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {

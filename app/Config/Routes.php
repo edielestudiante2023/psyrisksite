@@ -53,5 +53,14 @@ $routes->group('normativa', static function ($routes) {
 $routes->match(['get', 'head'], 'privacidad', 'Legal::privacidad');
 $routes->match(['get', 'head'], 'terminos', 'Legal::terminos');
 
+// Referidos
+$routes->match(['get', 'head'], 'referidos', 'Referidos::index');
+$routes->post('referidos/registrar', 'Referidos::registrar');
+
+// Webinar
+$routes->match(['get', 'head'], 'webinar', 'Webinar::index');
+$routes->post('webinar/registrar', 'Webinar::registrar');
+$routes->match(['get', 'head'], 'webinar/gracias', 'Webinar::gracias');
+
 // PWA
 $routes->match(['get', 'head'], 'offline', 'Pwa::offline');

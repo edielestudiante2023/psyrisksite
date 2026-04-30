@@ -11,6 +11,8 @@ class Precios extends BaseController
             'description' => 'Tarifas de batería de riesgo psicosocial desde $1.100.000 COP. Pago por evaluación, sin suscripción. Empresas de 1 a 50 trabajadores y volumen mayor.',
             'keywords'    => 'precio batería riesgo psicosocial, tarifa evaluación psicosocial, costo batería psicosocial colombia',
             'activeNav'   => 'precios',
+            'ogImage'     => base_url('assets/img/og/precios.png'),
+            'ogImageAlt'  => 'PsyRisk · Precios de la batería de riesgo psicosocial',
         ];
 
         return view('pages/precios', $data);

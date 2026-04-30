@@ -2,12 +2,15 @@
 $pageTitle       = $title       ?? 'PsyRisk - Batería de Riesgo Psicosocial';
 $pageDescription = $description ?? 'Plataforma para evaluar, vigilar y gestionar el riesgo psicosocial conforme a la Resolución 2764 de 2022 en Colombia.';
 $canonical       = base_url(uri_string());
-$ogImage         = $ogImage ?? base_url('assets/img/icons/icon-512.png');
+$ogTitle         = $ogTitle       ?? $pageTitle;
+$ogDescription   = $ogDescription ?? $pageDescription;
+$ogImage         = $ogImage ?? base_url('assets/img/og/default.png');
+$ogImageAlt      = $ogImageAlt ?? $pageTitle;
 $ogType          = $ogType  ?? 'website';
 $keywords        = $keywords ?? 'batería de riesgo psicosocial, resolución 2764, riesgo psicosocial, evaluación psicosocial Colombia, SG-SST, clima organizacional';
 
 // Versionado de assets para invalidar caches (browser, CDN, SW) en cada release.
-$assetVer = '5';
+$assetVer = '6';
 
 $organizationLd = [
     '@context'      => 'https://schema.org',
@@ -70,20 +73,24 @@ $organizationLd = [
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:locale" content="es_CO">
     <meta property="og:type" content="<?= esc($ogType) ?>">
-    <meta property="og:title" content="<?= esc($pageTitle) ?>">
-    <meta property="og:description" content="<?= esc($pageDescription) ?>">
+    <meta property="og:title" content="<?= esc($ogTitle) ?>">
+    <meta property="og:description" content="<?= esc($ogDescription) ?>">
     <meta property="og:url" content="<?= esc($canonical) ?>">
     <meta property="og:site_name" content="PsyRisk">
     <meta property="og:image" content="<?= esc($ogImage) ?>">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:image:alt" content="PsyRisk - Batería de Riesgo Psicosocial">
+    <meta property="og:image:secure_url" content="<?= esc($ogImage) ?>">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="<?= esc($ogImageAlt) ?>">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= esc($pageTitle) ?>">
-    <meta name="twitter:description" content="<?= esc($pageDescription) ?>">
+    <meta name="twitter:site" content="@psyrisk">
+    <meta name="twitter:title" content="<?= esc($ogTitle) ?>">
+    <meta name="twitter:description" content="<?= esc($ogDescription) ?>">
     <meta name="twitter:image" content="<?= esc($ogImage) ?>">
+    <meta name="twitter:image:alt" content="<?= esc($ogImageAlt) ?>">
 
     <!-- PWA: manifest y tema -->
     <link rel="manifest" href="<?= base_url('manifest.webmanifest') ?>">

@@ -60,6 +60,10 @@
                 </div>
             </div>
 
+            <div class="nav-item">
+                <a href="https://cycloidtalent.com/blog" target="_blank" rel="noopener">Blog</a>
+            </div>
+
             <div class="nav-item <?= $active === 'nosotros' ? 'active' : '' ?>">
                 <a href="<?= base_url('nosotros') ?>">Nosotros</a>
             </div>
@@ -73,7 +77,11 @@
             <a href="https://wa.me/573229074371?text=Hola,%20quiero%20solicitar%20una%20demo%20de%20PsyRisk"
                target="_blank"
                rel="noopener"
-               class="btn btn-primary">Solicitar Demo</a>
+               class="btn btn-outline">Solicitar Demo</a>
+            <a href="<?= signup_url() ?>"
+               target="_blank"
+               rel="noopener"
+               class="btn btn-cta">Crear cuenta gratis</a>
         </div>
     </div>
 </header>

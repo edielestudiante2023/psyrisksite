@@ -36,7 +36,8 @@
         <p class="lead">Tu cliente entra a tudominio.com, ve tu logo, recibe los reportes con tu firma y nunca se entera de que la tecnología la opera PsyRisk. Tú mantienes el vínculo profesional al 100%.</p>
 
         <div class="hero-ctas">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar demo de Marca Propia</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Solicitar demo de Marca Propia</a>
         </div>
     </div>
 </section>
@@ -162,9 +163,10 @@
 <section class="cta-final">
     <div class="container">
         <h2>Lleva tu consultoría al siguiente nivel</h2>
-        <p>Conversemos sobre tu cartera, tu propuesta de valor y cómo PsyRisk Marca Propia puede multiplicarla.</p>
+        <p>Crea tu cuenta gratis y explora la plataforma, o conversemos sobre cómo PsyRisk Marca Propia se ajusta a tu cartera.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar demo personalizada</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Solicitar demo personalizada</a>
         </div>
     </div>
 </section>

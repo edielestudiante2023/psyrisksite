@@ -33,9 +33,10 @@
         <p class="lead">Pagas cuando aplicas. Sin contratos anuales obligatorios, sin sorpresas. La normativa exige reaplicar cada 1 o 2 años — tu inversión también dura ese tiempo.</p>
 
         <div class="hero-ctas">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Hablar con un asesor</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Solicitar cotización</a>
         </div>
+        <p style="margin-top:10px; font-size:.85rem; color:var(--color-muted);">14 días gratis · sin tarjeta · cancelas cuando quieras</p>
     </div>
 </section>
 
@@ -61,7 +62,8 @@
                     <li>Plan de intervención priorizado</li>
                     <li>Acompañamiento de psicólogo certificado</li>
                 </ul>
-                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline">Cotizar</a>
+                <a href="<?= signup_url('inicial') ?>" target="_blank" rel="noopener" class="btn btn-cta">Empezar gratis →</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px;">Cotizar</a>
             </div>
 
             <div class="price-card popular">
@@ -77,7 +79,8 @@
                     <li>Acompañamiento extendido</li>
                     <li>Pulsos cortos trimestrales</li>
                 </ul>
-                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-secondary">Cotizar</a>
+                <a href="<?= signup_url('profesional') ?>" target="_blank" rel="noopener" class="btn btn-cta">Empezar gratis →</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top:8px;">Cotizar</a>
             </div>
 
             <div class="price-card">
@@ -92,7 +95,8 @@
                     <li>Tablero comparativo por segmento</li>
                     <li>Recomendaciones accionables</li>
                 </ul>
-                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline">Cotizar</a>
+                <a href="<?= signup_url('empresarial') ?>" target="_blank" rel="noopener" class="btn btn-cta">Empezar gratis →</a>
+                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px;">Cotizar</a>
             </div>
         </div>
     </div>
@@ -247,9 +251,10 @@
 <section class="cta-final">
     <div class="container">
         <h2>¿Cuántos trabajadores tiene tu empresa?</h2>
-        <p>Te enviamos cotización formal en menos de 24 horas hábiles, ajustada a tu sector y región.</p>
+        <p>Crea tu cuenta gratis y explora la plataforma, o pide una cotización formal en menos de 24 horas hábiles.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar cotización</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Solicitar cotización</a>
         </div>
     </div>
 </section>

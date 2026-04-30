@@ -11,6 +11,8 @@ class Consultoras extends BaseController
             'description' => 'Programa para psicólogos consultores y firmas en Colombia. Ofrece batería de riesgo psicosocial con tecnología profesional, marca propia disponible y tarifa mayorista.',
             'keywords'    => 'plataforma consultores psicólogos, software batería psicosocial, marca blanca psicología',
             'activeNav'   => 'consultoras',
+            'ogImage'     => base_url('assets/img/og/consultoras.png'),
+            'ogImageAlt'  => 'PsyRisk · Plataforma para psicólogos consultores',
         ]);
     }
 
@@ -21,6 +23,8 @@ class Consultoras extends BaseController
             'description' => 'Cinco pasos desde la postulación hasta tu primer cliente cerrado: postulación, entrevista, vinculación, capacitación y primera aplicación con acompañamiento.',
             'keywords'    => 'programa consultores PsyRisk, vincularse PsyRisk, consultor psicología Colombia',
             'activeNav'   => 'consultoras',
+            'ogImage'     => base_url('assets/img/og/consultoras.png'),
+            'ogImageAlt'  => 'PsyRisk · Plataforma para psicólogos consultores',
         ]);
     }
 
@@ -31,6 +35,8 @@ class Consultoras extends BaseController
             'description' => 'Plataforma de batería de riesgo psicosocial con tu logo, dominio y firma profesional. Tu cliente nunca ve la marca PsyRisk. Configuración en 2 a 3 semanas.',
             'keywords'    => 'plataforma marca propia, software marca blanca psicología, white label batería psicosocial',
             'activeNav'   => 'consultoras',
+            'ogImage'     => base_url('assets/img/og/consultoras.png'),
+            'ogImageAlt'  => 'PsyRisk · Plataforma para psicólogos consultores',
         ]);
     }
 
@@ -41,6 +47,8 @@ class Consultoras extends BaseController
             'description' => 'Tarifa mayorista por aplicación de batería para psicólogos consultores. Volumen anual con descuentos progresivos. Margen 100% tuyo sobre lo que cobres a tu cliente.',
             'keywords'    => 'tarifa consultores, precio mayorista batería, costo consultor psicólogo',
             'activeNav'   => 'consultoras',
+            'ogImage'     => base_url('assets/img/og/consultoras.png'),
+            'ogImageAlt'  => 'PsyRisk · Plataforma para psicólogos consultores',
         ]);
     }
 }

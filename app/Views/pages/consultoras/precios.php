@@ -112,9 +112,10 @@
 <section class="cta-final">
     <div class="container">
         <h2>¿Calculas tu plan ideal?</h2>
-        <p>Conversemos sobre tu volumen actual y proyectado, y armemos juntos el esquema más conveniente.</p>
+        <p>Crea tu cuenta gratis y explora tarifas dentro de la plataforma, o conversemos sobre tu volumen proyectado.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Hablar con un asesor</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Hablar con un asesor</a>
         </div>
     </div>
 </section>

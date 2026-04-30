@@ -78,10 +78,11 @@
 
 <section class="cta-final">
     <div class="container">
-        <h2>¿Listo para postular?</h2>
-        <p>Estamos buscando psicólogos profesionales con vocación clínica y mentalidad emprendedora.</p>
+        <h2>¿Listo para empezar?</h2>
+        <p>Crea tu cuenta gratis y prueba la plataforma con tus propios clientes en 14 días, o postula al programa formal.</p>
         <div class="hero-ctas" style="justify-content:center;">
-            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Postular ahora</a>
+            <a href="<?= signup_url() ?>" target="_blank" rel="noopener" class="btn btn-cta btn-lg">Crear cuenta gratis</a>
+            <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Postular al programa</a>
         </div>
     </div>
 </section>
