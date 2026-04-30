@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use Config\Services;
+use App\Libraries\EmailService;
 
 class Webinar extends BaseController
 {
@@ -103,7 +103,15 @@ class Webinar extends BaseController
             $insertedId = (int) $db->insertID();
         }
 
-        $sent = $this->sendWebinarConfirmation($email, $name);
+        $emailService = new EmailService();
+        $sent         = $emailService->sendWebinarConfirmation(
+            $email,
+            $name,
+            (string) (env('WEBINAR_ZOOM_URL') ?: ''),
+            (string) (env('WEBINAR_NEXT_DATE') ?: ''),
+            function_exists('signup_url') ? signup_url() : 'https://psyrisk.cycloidtalent.com/signup'
+        );
+
         if ($sent && $insertedId) {
             $db->table('webinar_signups')
                 ->where('id', $insertedId)
@@ -137,31 +145,5 @@ class Webinar extends BaseController
             'webinarAt'       => $webinarAt,
             'pdfPublic'       => $pdfPublic,
         ]);
-    }
-
-    private function sendWebinarConfirmation(string $email, string $name): bool
-    {
-        try {
-            $emailService = Services::email();
-
-            $emailService->setTo($email);
-            $emailService->setSubject('Confirmamos tu lugar — Webinar PsyRisk');
-
-            $body = view('emails/webinar_confirmation', [
-                'name'      => $name,
-                'zoomUrl'   => (string) (env('WEBINAR_ZOOM_URL') ?: ''),
-                'webinarAt' => (string) (env('WEBINAR_NEXT_DATE') ?: ''),
-                'signupUrl' => function_exists('signup_url') ? signup_url() : 'https://psyrisk.cycloidtalent.com/signup',
-            ]);
-
-            $emailService->setMessage($body);
-            $emailService->setMailType('html');
-
-            return (bool) $emailService->send(false);
-        } catch (\Throwable $e) {
-            log_message('error', 'Webinar confirmation email failed: ' . $e->getMessage());
-
-            return false;
-        }
     }
 }

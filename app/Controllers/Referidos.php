@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use Config\Services;
+use App\Libraries\EmailService;
 
 class Referidos extends BaseController
 {
@@ -85,10 +85,13 @@ class Referidos extends BaseController
             ]);
         }
 
-        $db  = \Config\Database::connect();
-        $utm = function_exists('marketing_utm_params') ? marketing_utm_params() : [];
+        $db           = \Config\Database::connect();
+        $utm          = function_exists('marketing_utm_params') ? marketing_utm_params() : [];
+        $emailService = new EmailService();
 
         $registered = 0;
+        $sentCount  = 0;
+
         foreach ($valid as $r) {
             $token      = bin2hex(random_bytes(16));
             $signupLink = $this->buildReferralSignupUrl($token);
@@ -110,11 +113,11 @@ class Referidos extends BaseController
             ]);
 
             $insertedId = $db->insertID();
-            $sent       = $this->sendReferralInvite(
+            $sent       = $emailService->sendReferralInvite(
                 $r['email'],
                 $r['name'],
-                $referrerEmail,
                 $referrerName,
+                $referrerEmail,
                 $message,
                 $signupLink
             );
@@ -123,14 +126,24 @@ class Referidos extends BaseController
                 $db->table('referrals')
                     ->where('id', $insertedId)
                     ->update(['email_sent_at' => date('Y-m-d H:i:s')]);
+                $sentCount++;
             }
 
             $registered++;
         }
 
+        // Mensaje preciso según lo que realmente pasó.
+        if ($sentCount === $registered) {
+            $msg = '¡Gracias! Enviamos invitación a ' . $registered . ' colega(s). Te avisaremos cuando se registren.';
+        } elseif ($sentCount > 0) {
+            $msg = 'Registramos ' . $registered . ' referido(s). Enviamos ' . $sentCount . ' invitación(es); las demás se reenviarán automáticamente.';
+        } else {
+            $msg = 'Registramos ' . $registered . ' referido(s). Estamos procesando las invitaciones — recibirán el correo en breve.';
+        }
+
         session()->setFlashdata('referidos_flash', [
             'type'    => 'success',
-            'message' => '¡Gracias! Enviamos invitación a ' . $registered . ' colega(s). Te avisaremos cuando se registren.',
+            'message' => $msg,
         ]);
 
         return redirect()->to(base_url('referidos') . '#gracias');
@@ -145,40 +158,5 @@ class Referidos extends BaseController
         $params['ref']          = $token;
 
         return 'https://psyrisk.cycloidtalent.com/signup?' . http_build_query($params);
-    }
-
-    private function sendReferralInvite(
-        string $toEmail,
-        string $toName,
-        string $fromEmail,
-        string $fromName,
-        string $message,
-        string $link
-    ): bool {
-        try {
-            $emailService = Services::email();
-
-            $emailService->setTo($toEmail);
-            $emailService->setSubject(
-                ($fromName !== '' ? $fromName : $fromEmail) . ' te invita a probar PsyRisk gratis'
-            );
-
-            $body = view('emails/referral_invite', [
-                'toName'     => $toName !== '' ? $toName : 'Hola',
-                'fromName'   => $fromName !== '' ? $fromName : 'Un colega',
-                'fromEmail'  => $fromEmail,
-                'message'    => $message,
-                'signupLink' => $link,
-            ]);
-
-            $emailService->setMessage($body);
-            $emailService->setMailType('html');
-
-            return (bool) $emailService->send(false);
-        } catch (\Throwable $e) {
-            log_message('error', 'Referral email failed: ' . $e->getMessage());
-
-            return false;
-        }
     }
 }
