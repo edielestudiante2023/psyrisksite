@@ -10,7 +10,7 @@ $ogType          = $ogType  ?? 'website';
 $keywords        = $keywords ?? 'batería de riesgo psicosocial, resolución 2764, riesgo psicosocial, evaluación psicosocial Colombia, SG-SST, clima organizacional';
 
 // Versionado de assets para invalidar caches (browser, CDN, SW) en cada release.
-$assetVer = '6';
+$assetVer = '7';
 
 $organizationLd = [
     '@context'      => 'https://schema.org',
@@ -129,6 +129,7 @@ $organizationLd = [
     </main>
 
     <?= view('partials/footer') ?>
+    <?= view('partials/referidos-float') ?>
     <?= view('partials/whatsapp') ?>
 
     <script src="<?= base_url('assets/js/psyrisk.js') ?>?v=<?= $assetVer ?>" defer></script>

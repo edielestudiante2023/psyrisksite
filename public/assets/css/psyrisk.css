@@ -758,6 +758,37 @@ section.alt { background: var(--color-bg-alt); }
     100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
 
+/* ---------- Referidos float button ---------- */
+.ref-float {
+    position: fixed;
+    bottom: 24px;
+    right: 92px; /* 24 (right margin) + 58 (wa width) + 10 (gap) */
+    height: 58px;
+    padding: 0 18px 0 14px;
+    border-radius: 999px;
+    background: var(--color-secondary);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 24px rgba(161,75,161,.35);
+    z-index: 60;
+    font-weight: 600;
+    font-size: .95rem;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.ref-float:hover {
+    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 10px 28px rgba(161,75,161,.45);
+}
+.ref-float-label { white-space: nowrap; }
+@media (max-width: 640px) {
+    /* En móviles el label estorba — colapsa a círculo */
+    .ref-float { padding: 0; width: 58px; justify-content: center; }
+    .ref-float-label { display: none; }
+}
+
 /* ---------- Page hero (inner pages) ---------- */
 .page-hero {
     position: relative;
