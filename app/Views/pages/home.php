@@ -30,10 +30,10 @@
                     <div class="brain-circle"></div>
                     <div class="brain-ring"></div>
                     <img src="<?= base_url('assets/img/logo_psirysk.png') ?>" alt="" class="brain-img">
-                    <span class="orbit-pill tl"><span class="dot" style="background:var(--color-primary);"></span> Diagnóstico activo</span>
-                    <span class="orbit-pill tr"><span class="dot" style="background:var(--color-secondary);"></span> 248 evaluados</span>
-                    <span class="orbit-pill br"><span class="dot" style="background:var(--color-success);"></span> SVE en línea</span>
-                    <span class="orbit-pill bl"><span class="dot" style="background:var(--color-warning);"></span> 3 alertas hoy</span>
+                    <span class="orbit-pill tl">✓ Resolución 2764 cumplida</span>
+                    <span class="orbit-pill tr">📊 Reporte oficial automático</span>
+                    <span class="orbit-pill br">⚡ Plan de intervención generado</span>
+                    <span class="orbit-pill bl">🔒 Datos protegidos · Ley 1581</span>
                 </div>
             </div>
         </div>
