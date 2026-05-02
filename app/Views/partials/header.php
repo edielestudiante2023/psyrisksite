@@ -14,7 +14,7 @@
         </button>
 
         <nav class="main-nav" id="main-nav" aria-label="Menú principal">
-            <div class="nav-item has-dropdown <?= $active === 'servicios' ? 'active' : '' ?>">
+            <div class="nav-item has-dropdown <?= in_array($active, ['servicios', 'digitacion'], true) ? 'active' : '' ?>">
                 <button type="button" aria-haspopup="true">
                     Servicios
                     <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -25,6 +25,7 @@
                     <a href="<?= base_url('servicios/planes-intervencion') ?>"><strong>Planes de Intervención</strong><small>Estrategias priorizadas por riesgo</small></a>
                     <a href="<?= base_url('servicios/clima-organizacional') ?>"><strong>Clima Organizacional</strong><small>Diagnóstico de percepción laboral</small></a>
                     <a href="<?= base_url('servicios/capacitaciones') ?>"><strong>Capacitaciones</strong><small>Liderazgo, estrés y burnout</small></a>
+                    <a href="<?= base_url('digitacion-inteligente') ?>"><strong>Digitación inteligente <span style="display:inline-block; margin-left:6px; padding:2px 8px; background:var(--color-secondary); color:#fff; font-size:.65rem; border-radius:6px; text-transform:uppercase; letter-spacing:.05em; vertical-align:middle;">Nuevo</span></strong><small>Foto + IA para baterías en papel</small></a>
                 </div>
             </div>
 

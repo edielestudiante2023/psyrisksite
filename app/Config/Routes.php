@@ -62,5 +62,8 @@ $routes->match(['get', 'head'], 'webinar', 'Webinar::index');
 $routes->post('webinar/registrar', 'Webinar::registrar');
 $routes->match(['get', 'head'], 'webinar/gracias', 'Webinar::gracias');
 
+// Digitación inteligente (foto + IA — landing comercial; CTAs van a cycloidtalent.com/contacto)
+$routes->match(['get', 'head'], 'digitacion-inteligente', 'DigitacionInteligente::index');
+
 // PWA
 $routes->match(['get', 'head'], 'offline', 'Pwa::offline');

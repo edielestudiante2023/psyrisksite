@@ -275,6 +275,54 @@
     </div>
 </section>
 
+<!-- =================== DIGITACIÓN INTELIGENTE (teaser ventaja IA) =================== -->
+<section class="alt">
+    <div class="container">
+        <div class="split">
+            <div class="split-text">
+                <span class="eyebrow" style="display:inline-block; text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; font-weight:600; color:var(--color-secondary); margin-bottom:12px;">Ventaja PsyRisk · IA aplicada</span>
+                <h2>Ya no digitamos. <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">Inteligentizamos</span>.</h2>
+                <p>Cada cartilla en papel cuesta entre 25 y 30 minutos de digitación manual a buen ritmo. Una jornada de 50 personas se vuelve 20+ horas de teclado — y el error humano crece con el cansancio.</p>
+                <p>Con la <strong>digitación inteligente</strong>, fotografías la cartilla desde tu celular, la IA reconoce las marcas y solo arbitras los pocos casos dudosos. El psicólogo vuelve a interpretar; deja de teclear.</p>
+
+                <ul style="list-style:none; padding:0; margin:18px 0 22px; display:flex; flex-direction:column; gap:10px;">
+                    <li style="display:flex; align-items:flex-start; gap:10px;"><span style="color:var(--color-success); font-weight:bold; flex-shrink:0;">✓</span><span>La IA digitaliza, tú no tecleas</span></li>
+                    <li style="display:flex; align-items:flex-start; gap:10px;"><span style="color:var(--color-success); font-weight:bold; flex-shrink:0;">✓</span><span>Solo arbitras lo dudoso, no cartilla por cartilla</span></li>
+                    <li style="display:flex; align-items:flex-start; gap:10px;"><span style="color:var(--color-success); font-weight:bold; flex-shrink:0;">✓</span><span>De semanas a horas en jornadas masivas</span></li>
+                </ul>
+
+                <a href="<?= base_url('digitacion-inteligente?utm_source=psyrisksite&utm_medium=internal&utm_campaign=digitacion-inteligente') ?>" class="btn btn-primary">Conoce la digitación inteligente →</a>
+            </div>
+
+            <div style="background:linear-gradient(135deg,var(--color-primary-light),#fff); border:1px solid var(--color-border); border-radius:16px; padding:32px; aspect-ratio:4/3; display:flex; flex-direction:column; justify-content:center; gap:16px;">
+                <div style="display:flex; align-items:center; gap:14px; padding:14px 18px; background:#fff; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.04);">
+                    <span style="font-size:1.6rem;">📄</span>
+                    <div>
+                        <div style="font-weight:600; font-size:.95rem;">Aplicas en papel</div>
+                        <div style="font-size:.82rem; color:var(--color-muted);">Forma A o B oficial, como siempre</div>
+                    </div>
+                </div>
+                <div style="text-align:center; color:var(--color-secondary); font-weight:bold; font-size:1.2rem;">↓</div>
+                <div style="display:flex; align-items:center; gap:14px; padding:14px 18px; background:#fff; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.04);">
+                    <span style="font-size:1.6rem;">📷</span>
+                    <div>
+                        <div style="font-weight:600; font-size:.95rem;">Fotografías desde el celular</div>
+                        <div style="font-size:.82rem; color:var(--color-muted);">La IA reconoce las marcas en segundos</div>
+                    </div>
+                </div>
+                <div style="text-align:center; color:var(--color-secondary); font-weight:bold; font-size:1.2rem;">↓</div>
+                <div style="display:flex; align-items:center; gap:14px; padding:14px 18px; background:#fff; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.04);">
+                    <span style="font-size:1.6rem;">📊</span>
+                    <div>
+                        <div style="font-weight:600; font-size:.95rem;">Reporte oficial generado</div>
+                        <div style="font-size:.82rem; color:var(--color-muted);">Sin re-digitar, sin Excel, sin esperas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- =================== CÓMO SE COMPARA (timeline) =================== -->
 <section>
     <div class="container">
