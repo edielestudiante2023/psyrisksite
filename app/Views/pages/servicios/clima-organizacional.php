@@ -196,14 +196,14 @@
                 <h2>40 ítems positivos en escala Likert de 5 puntos</h2>
                 <p>Los colaboradores responden afirmaciones cortas en una escala que va de <strong>1 = Totalmente en desacuerdo</strong> a <strong>5 = Totalmente de acuerdo</strong>. Todos los ítems son positivos: puntaje alto = clima favorable, sin ítems inversos.</p>
                 <p>Cada cuestionario toma entre <strong>12 y 15 minutos</strong> y se responde desde cualquier dispositivo. Los enlaces son únicos por persona, las respuestas son <strong>completamente anónimas</strong> a nivel individual y el marco temporal evaluado es la <strong>experiencia de los últimos 6 meses</strong>.</p>
-                <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-primary">Ver los 40 ítems</a>
+                <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-primary">Ver tabla de especificaciones</a>
             </div>
 
             <div class="split-visual" style="background:#fff;">
-                <div style="font-size:.8rem; color:var(--color-muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px;">Vista previa del cuestionario</div>
+                <div style="font-size:.8rem; color:var(--color-muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px;">Cómo se ve el cuestionario</div>
 
                 <div class="likert">
-                    <span class="stmt">Me siento orgulloso de pertenecer a esta organización.</span>
+                    <span class="stmt">Afirmación sobre orgullo de pertenencia organizacional.</span>
                     <div class="scale">
                         <span class="dot">1</span>
                         <span class="dot">2</span>
@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <div class="likert">
-                    <span class="stmt">Las decisiones importantes se comunican de forma clara y oportuna.</span>
+                    <span class="stmt">Afirmación sobre claridad en la comunicación de decisiones.</span>
                     <div class="scale">
                         <span class="dot">1</span>
                         <span class="dot">2</span>
@@ -223,7 +223,7 @@
                     </div>
                 </div>
                 <div class="likert">
-                    <span class="stmt">Puedo expresar mis opiniones sin temor a consecuencias negativas.</span>
+                    <span class="stmt">Afirmación sobre seguridad psicológica en el equipo.</span>
                     <div class="scale">
                         <span class="dot">1</span>
                         <span class="dot">2</span>
@@ -236,6 +236,7 @@
                     <span>1 · Totalmente en desacuerdo</span>
                     <span>5 · Totalmente de acuerdo</span>
                 </div>
+                <div style="margin-top:14px; padding-top:12px; border-top:1px solid var(--color-border); font-size:.75rem; color:var(--color-muted); font-style:italic;">Vista ilustrativa. La redacción literal de los reactivos está reservada para las aplicaciones del servicio.</div>
             </div>
         </div>
     </div>

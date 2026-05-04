@@ -45,7 +45,7 @@
             <span class="sep">·</span>
             <a href="#dimensiones">Las 10 dimensiones</a>
             <span class="sep">·</span>
-            <a href="#items">Los 40 ítems</a>
+            <a href="#especificaciones">Tabla de especificaciones</a>
             <span class="sep">·</span>
             <a href="#baremos">Tabla de baremos</a>
         </div>
@@ -166,13 +166,13 @@
     </div>
 </section>
 
-<!-- =================== LOS 40 ÍTEMS =================== -->
-<section id="items">
+<!-- =================== TABLA DE ESPECIFICACIONES =================== -->
+<section id="especificaciones">
     <div class="container">
         <div class="section-head" style="text-align:left;">
-            <span class="eyebrow">3 · Los 40 ítems</span>
-            <h2>Listado completo por dimensión</h2>
-            <p>Todos los ítems se responden en escala Likert de 5 puntos (1 = Totalmente en desacuerdo · 5 = Totalmente de acuerdo).</p>
+            <span class="eyebrow">3 · Tabla de especificaciones</span>
+            <h2>Qué evalúa cada reactivo, por dimensión</h2>
+            <p>Por dimensión, qué evalúa cada uno de los 4 reactivos en escala Likert de 5 puntos. La redacción literal de los reactivos está reservada para las aplicaciones del servicio.</p>
         </div>
 
         <!-- Dimensión 1 -->
@@ -181,13 +181,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>1</td><td>Me siento orgulloso(a) de pertenecer a esta organización.</td><td>Orgullo de pertenencia</td></tr>
-                        <tr><td>2</td><td>Recomendaría esta organización como un buen lugar para trabajar.</td><td>Intención de recomendación (eNPS)</td></tr>
-                        <tr><td>3</td><td>Me identifico con los valores y la forma de ser de esta organización.</td><td>Identificación con valores</td></tr>
-                        <tr><td>4</td><td>Siento que soy parte importante de esta organización.</td><td>Sentido de importancia personal</td></tr>
+                        <tr><td>1</td><td>Orgullo de pertenencia</td><td>Grado de orgullo emocional asociado a pertenecer a la organización.</td></tr>
+                        <tr><td>2</td><td>Intención de recomendación (eNPS)</td><td>Disposición del respondiente a recomendar la organización como lugar de trabajo.</td></tr>
+                        <tr><td>3</td><td>Identificación con valores</td><td>Nivel de identificación personal con los valores y la forma de operar de la organización.</td></tr>
+                        <tr><td>4</td><td>Sentido de importancia personal</td><td>Percepción del respondiente sobre su relevancia y aporte dentro de la organización.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -199,13 +199,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>5</td><td>La información que necesito para hacer mi trabajo fluye oportunamente entre las áreas.</td><td>Flujo de información entre áreas</td></tr>
-                        <tr><td>6</td><td>Las decisiones importantes de la organización se comunican de manera clara y oportuna.</td><td>Comunicación descendente</td></tr>
-                        <tr><td>7</td><td>Los canales de comunicación interna funcionan adecuadamente.</td><td>Funcionamiento de canales</td></tr>
-                        <tr><td>8</td><td>Cuando tengo una opinión o sugerencia, encuentro espacios para expresarla.</td><td>Comunicación ascendente</td></tr>
+                        <tr><td>5</td><td>Flujo de información entre áreas</td><td>Percepción sobre la oportunidad y fluidez de la información que circula entre áreas para hacer el trabajo.</td></tr>
+                        <tr><td>6</td><td>Comunicación descendente</td><td>Claridad y oportunidad percibidas en la comunicación de decisiones organizacionales relevantes.</td></tr>
+                        <tr><td>7</td><td>Funcionamiento de canales</td><td>Valoración del funcionamiento de los canales formales de comunicación interna.</td></tr>
+                        <tr><td>8</td><td>Comunicación ascendente</td><td>Disponibilidad percibida de espacios para expresar opiniones y sugerencias hacia arriba.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -217,13 +217,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>9</td><td>En esta organización se promueve la búsqueda de nuevas formas de hacer las cosas.</td><td>Promoción de lo nuevo</td></tr>
-                        <tr><td>10</td><td>Las ideas innovadoras de los colaboradores son tomadas en cuenta.</td><td>Apertura a ideas</td></tr>
-                        <tr><td>11</td><td>La organización se adapta con agilidad a los cambios del entorno.</td><td>Adaptación al entorno</td></tr>
-                        <tr><td>12</td><td>Aquí los errores se utilizan como oportunidad de aprendizaje y mejora.</td><td>Aprendizaje organizacional</td></tr>
+                        <tr><td>9</td><td>Promoción de lo nuevo</td><td>Grado en que la organización estimula la búsqueda de nuevas formas de hacer el trabajo.</td></tr>
+                        <tr><td>10</td><td>Apertura a ideas</td><td>Percepción sobre el nivel en que las ideas innovadoras de los colaboradores son consideradas.</td></tr>
+                        <tr><td>11</td><td>Adaptación al entorno</td><td>Valoración de la agilidad organizacional para adaptarse a los cambios del entorno.</td></tr>
+                        <tr><td>12</td><td>Aprendizaje organizacional</td><td>Percepción sobre cómo la organización trata el error: como castigo o como oportunidad de aprendizaje.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -235,13 +235,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>13</td><td>En mi equipo de trabajo existe un ambiente de colaboración y apoyo mutuo.</td><td>Colaboración y apoyo mutuo</td></tr>
-                        <tr><td>14</td><td>Puedo expresar mis opiniones y desacuerdos sin temor a consecuencias negativas.</td><td>Seguridad psicológica</td></tr>
-                        <tr><td>15</td><td>Las personas con las que trabajo confían unas en otras.</td><td>Confianza interpersonal</td></tr>
-                        <tr><td>16</td><td>Cuando alguien comete un error en mi equipo, se aborda de manera constructiva.</td><td>Manejo constructivo del error</td></tr>
+                        <tr><td>13</td><td>Colaboración y apoyo mutuo</td><td>Percepción del clima de colaboración y apoyo mutuo dentro del equipo de trabajo inmediato.</td></tr>
+                        <tr><td>14</td><td>Seguridad psicológica</td><td>Percepción de poder expresar opiniones y desacuerdos sin temor a consecuencias negativas.</td></tr>
+                        <tr><td>15</td><td>Confianza interpersonal</td><td>Nivel percibido de confianza interpersonal entre las personas con las que se trabaja directamente.</td></tr>
+                        <tr><td>16</td><td>Manejo constructivo del error</td><td>Forma percibida en que el equipo aborda los errores de sus integrantes (constructiva vs. punitiva).</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -253,13 +253,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>17</td><td>Mi trabajo bien hecho es reconocido en esta organización.</td><td>Reconocimiento del desempeño</td></tr>
-                        <tr><td>18</td><td>Tengo oportunidades reales de aprender y desarrollarme profesionalmente.</td><td>Oportunidades de aprendizaje</td></tr>
-                        <tr><td>19</td><td>Recibo retroalimentación útil sobre mi desempeño.</td><td>Retroalimentación de desempeño</td></tr>
-                        <tr><td>20</td><td>Veo posibilidades concretas de crecimiento profesional para mí en esta organización.</td><td>Proyección de crecimiento</td></tr>
+                        <tr><td>17</td><td>Reconocimiento del desempeño</td><td>Percepción individual sobre el reconocimiento que recibe el trabajo bien hecho.</td></tr>
+                        <tr><td>18</td><td>Oportunidades de aprendizaje</td><td>Percepción sobre la existencia de oportunidades reales de aprender y desarrollarse profesionalmente.</td></tr>
+                        <tr><td>19</td><td>Retroalimentación de desempeño</td><td>Valoración de la utilidad de la retroalimentación recibida sobre el propio desempeño.</td></tr>
+                        <tr><td>20</td><td>Proyección de crecimiento</td><td>Percepción individual sobre las posibilidades concretas de crecimiento profesional dentro de la organización.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -271,13 +271,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>21</td><td>Las decisiones que afectan al personal se toman siguiendo criterios justos.</td><td>Justicia procedimental</td></tr>
-                        <tr><td>22</td><td>Las cargas de trabajo se distribuyen de manera equitativa entre las personas.</td><td>Justicia distributiva</td></tr>
-                        <tr><td>23</td><td>En esta organización las personas reciben un trato respetuoso e imparcial.</td><td>Justicia interaccional</td></tr>
-                        <tr><td>24</td><td>Los procesos para evaluar y promover al personal son transparentes.</td><td>Transparencia evaluativa</td></tr>
+                        <tr><td>21</td><td>Justicia procedimental</td><td>Percepción sobre el uso de criterios justos en decisiones que afectan al personal.</td></tr>
+                        <tr><td>22</td><td>Justicia distributiva</td><td>Percepción sobre la equidad en la distribución de cargas de trabajo entre las personas.</td></tr>
+                        <tr><td>23</td><td>Justicia interaccional</td><td>Percepción sobre el trato respetuoso e imparcial que reciben las personas en la organización.</td></tr>
+                        <tr><td>24</td><td>Transparencia evaluativa</td><td>Valoración de la transparencia de los procesos para evaluar y promover al personal.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -289,13 +289,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>25</td><td>Conozco con claridad hacia dónde se dirige esta organización.</td><td>Claridad de dirección estratégica</td></tr>
-                        <tr><td>26</td><td>El trabajo que realizo contribuye al propósito de la organización.</td><td>Sentido del trabajo (meaning)</td></tr>
-                        <tr><td>27</td><td>Las metas de mi área están alineadas con los objetivos generales de la organización.</td><td>Alineación área-organización</td></tr>
-                        <tr><td>28</td><td>Comprendo cómo lo que hago aporta a los resultados de la organización.</td><td>Comprensión del aporte personal</td></tr>
+                        <tr><td>25</td><td>Claridad de dirección estratégica</td><td>Grado de claridad percibido respecto al rumbo estratégico de la organización.</td></tr>
+                        <tr><td>26</td><td>Sentido del trabajo (meaning)</td><td>Percepción de cómo el trabajo individual contribuye al propósito de la organización.</td></tr>
+                        <tr><td>27</td><td>Alineación área-organización</td><td>Percepción de alineación entre las metas del área y los objetivos generales de la organización.</td></tr>
+                        <tr><td>28</td><td>Comprensión del aporte personal</td><td>Comprensión del respondiente sobre cómo su trabajo aporta a los resultados organizacionales.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -307,13 +307,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>29</td><td>Confío en las decisiones que toma la alta dirección de esta organización.</td><td>Confianza en decisiones de alta dirección</td></tr>
-                        <tr><td>30</td><td>La alta dirección actúa de manera coherente con los valores que comunica.</td><td>Coherencia decir-hacer</td></tr>
-                        <tr><td>31</td><td>Los líderes de esta organización inspiran confianza en el rumbo del negocio.</td><td>Liderazgo transformacional / inspirador</td></tr>
-                        <tr><td>32</td><td>La dirección demuestra preocupación genuina por las personas que trabajan aquí.</td><td>Orientación a las personas</td></tr>
+                        <tr><td>29</td><td>Confianza en decisiones de alta dirección</td><td>Nivel de confianza en las decisiones que toma la alta dirección de la organización.</td></tr>
+                        <tr><td>30</td><td>Coherencia decir-hacer</td><td>Percepción de coherencia entre los valores que comunica la alta dirección y su actuación efectiva.</td></tr>
+                        <tr><td>31</td><td>Liderazgo transformacional / inspirador</td><td>Grado en que los líderes inspiran confianza en el rumbo del negocio.</td></tr>
+                        <tr><td>32</td><td>Orientación a las personas</td><td>Percepción de la preocupación genuina de la dirección por las personas que trabajan en la organización.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -325,13 +325,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>33</td><td>En esta organización se identifica y se cuida a las personas con alto potencial.</td><td>Identificación de alto potencial (HiPo)</td></tr>
-                        <tr><td>34</td><td>Las decisiones sobre promociones y movimientos internos se basan en méritos y capacidades.</td><td>Meritocracia en promociones</td></tr>
-                        <tr><td>35</td><td>La organización logra atraer y retener profesionales talentosos.</td><td>Atracción y retención</td></tr>
-                        <tr><td>36</td><td>Las capacidades de las personas son aprovechadas en los cargos donde mejor encajan.</td><td>Person-Job Fit</td></tr>
+                        <tr><td>33</td><td>Identificación de alto potencial (HiPo)</td><td>Percepción sobre la capacidad organizacional para identificar y cuidar a las personas con alto potencial.</td></tr>
+                        <tr><td>34</td><td>Meritocracia en promociones</td><td>Percepción de meritocracia en las decisiones sobre promociones y movimientos internos.</td></tr>
+                        <tr><td>35</td><td>Atracción y retención</td><td>Valoración sobre la capacidad organizacional para atraer y retener profesionales talentosos.</td></tr>
+                        <tr><td>36</td><td>Person-Job Fit</td><td>Percepción sobre el aprovechamiento de las capacidades de las personas en los cargos donde mejor encajan.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -343,13 +343,13 @@
             <div class="ficha-table-wrap">
                 <table class="ficha-table ficha-items">
                     <thead>
-                        <tr><th style="width:50px;">#</th><th>Ítem</th><th style="width:32%;">Sub-constructo</th></tr>
+                        <tr><th style="width:50px;">#</th><th style="width:30%;">Sub-constructo</th><th>Qué evalúa el reactivo</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>37</td><td>En esta organización existe un compromiso real con la calidad del trabajo.</td><td>Compromiso con la calidad</td></tr>
-                        <tr><td>38</td><td>Se promueve activamente la mejora continua en procesos y resultados.</td><td>Mejora continua</td></tr>
-                        <tr><td>39</td><td>Existen estándares claros y exigentes sobre cómo se debe hacer el trabajo.</td><td>Estándares de desempeño</td></tr>
-                        <tr><td>40</td><td>Las personas se sienten orgullosas de la calidad de los productos o servicios que entrega la organización.</td><td>Orgullo por el producto/servicio</td></tr>
+                        <tr><td>37</td><td>Compromiso con la calidad</td><td>Percepción del compromiso real de la organización con la calidad del trabajo.</td></tr>
+                        <tr><td>38</td><td>Mejora continua</td><td>Grado en que se promueve activamente la mejora continua en procesos y resultados.</td></tr>
+                        <tr><td>39</td><td>Estándares de desempeño</td><td>Percepción sobre la existencia de estándares claros y exigentes sobre cómo se debe hacer el trabajo.</td></tr>
+                        <tr><td>40</td><td>Orgullo por el producto/servicio</td><td>Grado de orgullo de las personas por la calidad de los productos o servicios que entrega la organización.</td></tr>
                     </tbody>
                 </table>
             </div>
