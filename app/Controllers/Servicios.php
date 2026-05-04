@@ -17,9 +17,9 @@ class Servicios extends BaseController
     public function climaOrganizacional(): string
     {
         return view('pages/servicios/clima-organizacional', [
-            'title'       => 'Clima Organizacional · Psycloid Method v1.0 · 10 dimensiones · PsyRisk',
-            'description' => 'Diagnóstico de clima organizacional con el Psycloid Method v1.0: 10 dimensiones, 40 ítems, escala Likert de 5 puntos e Índice Global de Clima (IGC) 0–100.',
-            'keywords'    => 'clima organizacional, psycloid method, encuesta de clima laboral, diagnóstico clima empresa, clima laboral colombia, IGC',
+            'title'       => 'Clima Organizacional · El complemento estratégico de la Batería Psicosocial · PsyRisk',
+            'description' => 'Diagnóstico de clima organizacional con 10 dimensiones, 40 ítems en escala Likert e Índice Global de Clima 0–100. Lo que la Batería no puede ver: identificación, propósito, justicia, talento y cultura.',
+            'keywords'    => 'clima organizacional, encuesta de clima laboral, diagnóstico clima empresa, clima laboral colombia, complemento batería psicosocial',
             'activeNav'   => 'servicios',
         ]);
     }
@@ -27,9 +27,9 @@ class Servicios extends BaseController
     public function fichaTecnicaClima(): string
     {
         return view('pages/servicios/ficha-tecnica-clima', [
-            'title'       => 'Ficha Técnica · Psycloid Method – Clima Organizacional v1.0 · PsyRisk',
-            'description' => 'Ficha técnica completa del Psycloid Method – Clima Organizacional v1.0: marco teórico, 10 dimensiones, 40 ítems, escala Likert 5 puntos, IGC 0–100 y baremos.',
-            'keywords'    => 'ficha técnica clima organizacional, psycloid method clima v1.0, dimensiones clima laboral, baremos clima',
+            'title'       => 'Ficha Técnica · Clima Organizacional · PsyRisk',
+            'description' => 'Ficha técnica del instrumento de Clima Organizacional: marco teórico, 10 dimensiones, 40 ítems, escala Likert 5 puntos, Índice Global de Clima 0–100 y baremos.',
+            'keywords'    => 'ficha técnica clima organizacional, dimensiones clima laboral, baremos clima, índice global de clima',
             'activeNav'   => 'servicios',
         ]);
     }

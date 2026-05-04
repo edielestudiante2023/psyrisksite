@@ -7,14 +7,14 @@
     ['name' => 'Clima Organizacional',  'url' => base_url('servicios/clima-organizacional')],
 ]]) ?>
 <?= view('partials/jsonld-service', [
-    'name'        => 'Diagnóstico de Clima Organizacional · Psycloid Method v1.0',
-    'description' => 'Diagnóstico de clima organizacional con el Psycloid Method v1.0: 10 dimensiones, 40 ítems, escala Likert de 5 puntos, Índice Global de Clima (IGC) 0–100 y plan de mejora accionable.',
+    'name'        => 'Diagnóstico de Clima Organizacional',
+    'description' => 'Diagnóstico de clima organizacional con 10 dimensiones, 40 ítems en escala Likert e Índice Global de Clima 0–100. El complemento estratégico de la Batería de Riesgo Psicosocial: mide identificación, propósito, justicia, talento y cultura.',
     'url'         => base_url('servicios/clima-organizacional'),
     'serviceType' => 'Clima organizacional',
 ]) ?>
 <?= view('partials/jsonld-faq', ['faqs' => [
-    ['q' => '¿En qué se diferencia el clima organizacional de la batería de riesgo psicosocial?', 'a' => 'La batería es un instrumento legalmente obligatorio que mide factores de riesgo psicosocial definidos por Mintrabajo. El clima organizacional es un diagnóstico estratégico voluntario que mide percepciones compartidas sobre políticas, prácticas y conductas. Son complementarios.'],
-    ['q' => '¿Qué mide exactamente el Psycloid Method de Clima Organizacional?', 'a' => 'Mide 10 dimensiones del clima a través de 40 ítems en escala Likert de 5 puntos. Calcula un Índice Global de Clima (IGC) de 0 a 100 con cinco niveles: Crítico, Bajo, Medio, Alto y Óptimo.'],
+    ['q' => '¿En qué se diferencia el clima organizacional de la batería de riesgo psicosocial?', 'a' => 'La Batería es un instrumento legalmente obligatorio que mide factores de riesgo psicosocial definidos por Mintrabajo: detecta lo que potencialmente daña a las personas. El Clima Organizacional es un diagnóstico estratégico voluntario que mide el activo cultural: identificación, propósito, justicia, talento y excelencia. Son complementarios y no sustitutos.'],
+    ['q' => '¿Por qué necesito ambos instrumentos?', 'a' => 'La Batería protege a la empresa del riesgo y del incumplimiento. El Clima Organizacional la diferencia, la hace rentable y sostenible. Medir solo Batería es como un examen médico que detecta enfermedades pero nunca dice si estás en forma.'],
     ['q' => '¿Cuánto tarda una persona en responder el cuestionario?', 'a' => 'Entre 12 y 15 minutos. Es 100% digital, anónimo e individual.'],
     ['q' => '¿Quiénes pueden responder el instrumento?', 'a' => 'Trabajadores con al menos 3 meses de antigüedad. Se excluyen personas en proceso de desvinculación y temporales con vínculo intermitente menor a 90 días.'],
     ['q' => '¿Cómo se garantiza el anonimato de las respuestas?', 'a' => 'El enlace es único para evitar duplicados, pero las respuestas se almacenan disociadas del identificador. Los reportes se entregan solo con un mínimo de 7 personas por segmento.'],
@@ -35,14 +35,14 @@
         </nav>
 
         <ul class="tag-list">
-            <li class="purple">Psycloid Method v1.0</li>
-            <li>10 dimensiones · 40 ítems</li>
-            <li class="purple">Escala Likert de 5 puntos</li>
+            <li class="purple">Complemento estratégico de la Batería</li>
+            <li>10 dimensiones</li>
+            <li class="purple">40 ítems · Likert 5 puntos</li>
             <li>IGC 0–100</li>
         </ul>
 
-        <h1>Mide el <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">clima real</span> de tu organización con un instrumento fundamentado</h1>
-        <p class="lead">El <strong>Psycloid Method – Clima Organizacional v1.0</strong> mide percepciones compartidas sobre políticas, prácticas y conductas organizacionales. Está construido sobre marcos teóricos consolidados (Schneider, Patterson, Edmondson, Colquitt, Likert, Toro Álvarez) y entrega un Índice Global de Clima accionable.</p>
+        <h1>El diagnóstico que la <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">Batería no puede darte</span></h1>
+        <p class="lead">La Batería de Riesgo Psicosocial te dice si estás haciendo daño a tu gente. <strong>El Clima Organizacional te dice si estás sacando lo mejor de ella.</strong> Son dos preguntas distintas — y ningún diagnóstico organizacional serio responde las dos sin medirlas por separado.</p>
 
         <div class="hero-ctas">
             <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar diagnóstico</a>
@@ -61,13 +61,71 @@
     </div>
 </section>
 
+<!-- =================== COMPLEMENTARIEDAD CON LA BATERÍA =================== -->
+<section id="complementariedad" class="alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Por qué necesitas las dos</span>
+            <h2>Lo que la Batería no puede ver — y por qué Clima la complementa</h2>
+            <p>Ambos instrumentos miden cosas distintas con propósitos distintos. Juntos te dan la lectura completa de la salud organizacional.</p>
+        </div>
+
+        <div class="comp-grid">
+            <article class="comp-card comp-bateria">
+                <header>
+                    <span class="comp-tag">Batería de Riesgo Psicosocial</span>
+                    <h3>Mide el riesgo · Protege a la empresa</h3>
+                    <p class="comp-question">¿Estamos haciendo daño a la gente?</p>
+                </header>
+                <ul class="comp-bullets">
+                    <li>Demandas del trabajo, control y cargas</li>
+                    <li>Liderazgo del jefe inmediato</li>
+                    <li>Recompensas y compensación</li>
+                    <li>Doble presencia (extralaboral)</li>
+                    <li>Sintomatología de estrés</li>
+                </ul>
+                <div class="comp-footer">
+                    <strong>Lente:</strong> Salud ocupacional · SST<br>
+                    <strong>Marco:</strong> Cumplimiento Resolución 2764<br>
+                    <strong>Carácter:</strong> Legal y obligatorio
+                </div>
+            </article>
+
+            <article class="comp-card comp-clima">
+                <header>
+                    <span class="comp-tag">Clima Organizacional</span>
+                    <h3>Mide el activo cultural · Diferencia a la empresa</h3>
+                    <p class="comp-question">¿Estamos sacando lo mejor de la gente?</p>
+                </header>
+                <ul class="comp-bullets">
+                    <li>Identificación, orgullo y recomendación</li>
+                    <li>Propósito y alineación estratégica</li>
+                    <li>Justicia organizacional (procedimental, distributiva, interaccional)</li>
+                    <li>Confianza en la alta dirección, no en el jefe inmediato</li>
+                    <li>Seguridad psicológica, talento y cultura de calidad</li>
+                </ul>
+                <div class="comp-footer">
+                    <strong>Lente:</strong> Estrategia · Talento · Cultura<br>
+                    <strong>Marco:</strong> Decisión gerencial<br>
+                    <strong>Carácter:</strong> Voluntario y diferenciador
+                </div>
+            </article>
+        </div>
+
+        <div class="comp-conclusion">
+            <p>Medir solo Batería es como un examen médico que detecta enfermedades pero nunca te dice si estás en forma. Medir solo Clima es como medirte el rendimiento físico sin chequear si tienes una afección de fondo. <strong>No compiten — son las dos mitades del mismo diagnóstico.</strong></p>
+            <a href="<?= base_url('servicios/bateria-riesgo') ?>" class="btn btn-outline">Ver Batería de Riesgo Psicosocial</a>
+        </div>
+    </div>
+</section>
+
 <!-- =================== QUÉ MEDIMOS =================== -->
-<section id="dimensiones" class="alt">
+<section id="dimensiones">
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Qué medimos</span>
-            <h2>Las 10 dimensiones del Psycloid Method v1.0</h2>
-            <p>Cada dimensión está anclada en literatura científica de referencia y se mide con 4 ítems positivos en escala Likert de 5 puntos.</p>
+            <h2>Las 10 dimensiones del clima organizacional</h2>
+            <p>Cada dimensión está anclada en literatura científica de referencia (Schneider, Patterson, Edmondson, Colquitt, Likert, Toro Álvarez) y se mide con 4 ítems positivos en escala Likert de 5 puntos.</p>
         </div>
 
         <div class="dim-grid">
@@ -130,7 +188,7 @@
 </section>
 
 <!-- =================== EJEMPLO PREGUNTAS =================== -->
-<section>
+<section class="alt">
     <div class="container">
         <div class="split flip">
             <div class="split-text">
@@ -184,12 +242,12 @@
 </section>
 
 <!-- =================== ÍNDICE GLOBAL DE CLIMA =================== -->
-<section class="alt">
+<section>
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Índice Global de Clima</span>
             <h2>Un solo número para conversar — 10 dimensiones para actuar</h2>
-            <p>El IGC se calcula como promedio ponderado de las 10 dimensiones (pesos iguales 0.10 en v1.0), escalado a 0–100. Cinco niveles equidistantes con interpretación clínica de cada uno.</p>
+            <p>El IGC se calcula como promedio ponderado de las 10 dimensiones, escalado a 0–100. Cinco niveles equidistantes con interpretación clínica de cada uno.</p>
         </div>
 
         <div class="ficha-baremos">
@@ -238,7 +296,7 @@
 </section>
 
 <!-- =================== SEGMENTACIÓN =================== -->
-<section>
+<section class="alt">
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Segmentación</span>
@@ -308,18 +366,33 @@
     </div>
 </section>
 
-<!-- =================== TESTIMONIO =================== -->
-<section class="alt">
+<!-- =================== TESTIMONIOS =================== -->
+<section>
     <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Casos de aplicación</span>
+            <h2>Lo que han descubierto otras organizaciones</h2>
+        </div>
+
         <div class="quote">
-            "El reporte de clima de PsyRisk nos mostró que la rotación en planta no era por sueldo — era por ausencia de retroalimentación y de reconocimiento. Ajustamos el modelo de supervisión y la rotación bajó 11 puntos en seis meses. Sin esa segmentación habríamos seguido subiendo salarios sin resolver el problema."
+            "El reporte de clima nos mostró que la rotación en planta no era por sueldo — era por ausencia de retroalimentación y de reconocimiento. Ajustamos el modelo de supervisión y la rotación bajó 11 puntos en seis meses. Sin esa segmentación habríamos seguido subiendo salarios sin resolver el problema."
             <span class="by">— Jefatura de Talento Humano · Empresa del sector industrial · Cundinamarca</span>
+        </div>
+
+        <div class="quote">
+            "La Batería nos había dado puntajes aceptables, pero la rotación voluntaria de coordinadores seguía alta. El diagnóstico de clima reveló que el problema estaba en justicia procedimental: la gente sentía que las promociones no se decidían con criterios claros. Ajustamos el proceso de evaluación y la intención de quedarse en cargos medios subió de 54% a 78% en el siguiente pulso."
+            <span class="by">— Gerencia de Talento · Empresa de servicios profesionales · Bogotá</span>
+        </div>
+
+        <div class="quote">
+            "Lo que más nos sorprendió fue el contraste entre dimensiones: liderazgo del jefe inmediato puntuaba alto, pero confianza en la alta dirección puntuaba en nivel Bajo. Eso explicaba por qué los planes estratégicos no aterrizaban. Trabajamos un programa de comunicación de la dirección con el equipo y el IGC subió 14 puntos al año siguiente."
+            <span class="by">— Dirección Administrativa · Institución del sector salud · Antioquia</span>
         </div>
     </div>
 </section>
 
 <!-- =================== CTA BAND =================== -->
-<section>
+<section class="alt">
     <div class="container">
         <div class="cta-band">
             <div>
@@ -332,7 +405,7 @@
 </section>
 
 <!-- =================== FAQ =================== -->
-<section class="alt">
+<section>
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Preguntas frecuentes</span>
@@ -341,15 +414,15 @@
 
         <div class="faq">
             <details>
-                <summary>¿En qué se diferencia clima de la batería de riesgo psicosocial?</summary>
+                <summary>¿En qué se diferencia clima de la Batería de Riesgo Psicosocial?</summary>
                 <div class="answer">
-                    <p>La batería es un instrumento <strong>legalmente obligatorio</strong> que mide factores de riesgo psicosocial específicos definidos por Mintrabajo. El clima organizacional es un diagnóstico <strong>estratégico voluntario</strong> que mide percepciones compartidas sobre políticas, prácticas y conductas. Son complementarios: la batería marca el cumplimiento; el clima marca la cultura.</p>
+                    <p>La Batería es un instrumento <strong>legalmente obligatorio</strong> que mide factores de riesgo psicosocial específicos definidos por Mintrabajo: <strong>detecta lo que potencialmente daña</strong> a las personas. El Clima Organizacional es un diagnóstico <strong>estratégico voluntario</strong> que mide el activo cultural: <strong>detecta lo que potencia</strong>. La Batería marca el cumplimiento; el Clima marca la cultura.</p>
                 </div>
             </details>
             <details>
-                <summary>¿Qué mide exactamente el Psycloid Method de Clima v1.0?</summary>
+                <summary>¿Por qué necesito ambos instrumentos si la Batería ya es obligatoria?</summary>
                 <div class="answer">
-                    <p>Mide <strong>10 dimensiones</strong> a través de <strong>40 ítems</strong> en escala Likert de 5 puntos. Calcula un Índice Global de Clima (IGC) de 0 a 100 con cinco niveles: Crítico, Bajo, Medio, Alto y Óptimo. Está fundamentado en Schneider, Patterson, Edmondson, Colquitt, Likert y Toro Álvarez, entre otros.</p>
+                    <p>Porque miden cosas distintas. La Batería protege a la empresa del riesgo y del incumplimiento legal. El Clima la diferencia, la hace rentable y sostenible. Hay dimensiones críticas — identificación, propósito, justicia, confianza en la alta dirección, gestión del talento, cultura de calidad — que <strong>la Batería no toca</strong> y que explican rotación, productividad y engagement. Empresas con Batería en verde pueden seguir perdiendo talento si nunca miden Clima.</p>
                 </div>
             </details>
             <details>
@@ -383,11 +456,11 @@
 <!-- =================== CTA FINAL =================== -->
 <section class="cta-final">
     <div class="container">
-        <h2>Mide hoy el clima — toma decisiones con datos mañana</h2>
-        <p>Combina el Psycloid Method de Clima Organizacional con la Batería de Riesgo Psicosocial y obtén una vista completa de la salud cultural y normativa de tu empresa.</p>
+        <h2>Tu diagnóstico organizacional está incompleto sin las dos lecturas</h2>
+        <p>Combina el Clima Organizacional con la Batería de Riesgo Psicosocial y obtén la vista completa: lo que protege a tu empresa y lo que la diferencia.</p>
         <div class="hero-ctas" style="justify-content:center;">
             <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
-            <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-outline btn-lg">Ver ficha técnica</a>
+            <a href="<?= base_url('servicios/bateria-riesgo') ?>" class="btn btn-outline btn-lg">Ver Batería Psicosocial</a>
         </div>
     </div>
 </section>

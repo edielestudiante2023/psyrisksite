@@ -25,13 +25,13 @@
         </nav>
 
         <ul class="tag-list">
-            <li class="purple">Versión 1.0</li>
-            <li>10 dimensiones</li>
-            <li class="purple">40 ítems</li>
-            <li>Escala Likert 5 puntos</li>
+            <li class="purple">10 dimensiones</li>
+            <li>40 ítems</li>
+            <li class="purple">Escala Likert 5 puntos</li>
+            <li>IGC 0–100</li>
         </ul>
 
-        <h1>Ficha Técnica — <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">Psycloid Method · Clima Organizacional v1.0</span></h1>
+        <h1>Ficha Técnica — <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">Clima Organizacional</span></h1>
         <p class="lead">Documento técnico del instrumento de auto-reporte para medir clima organizacional, fundamentado en literatura científica consolidada y diseñado para entornos colombianos.</p>
     </div>
 </section>
@@ -48,8 +48,6 @@
             <a href="#items">Los 40 ítems</a>
             <span class="sep">·</span>
             <a href="#baremos">Tabla de baremos</a>
-            <span class="sep">·</span>
-            <a href="#fuentes">Fuentes documentales</a>
         </div>
     </div>
 </section>
@@ -86,7 +84,7 @@
                     <tr><th>Modalidad</th><td>Aplicación digital, anónima, individual</td></tr>
                     <tr><th>Población objetivo</th><td>Trabajadores con ≥ 3 meses de antigüedad en la organización</td></tr>
                     <tr><th>Población NO objetivo</th><td>Menos de 3 meses de antigüedad · personas en proceso de desvinculación · temporales con vínculo intermitente &lt; 90 días</td></tr>
-                    <tr><th>Cálculo del Índice Global de Clima (IGC)</th><td>Promedio ponderado de las 10 dimensiones, escalado a 0–100. Pesos iguales (0.10 cada una) en v1.0.</td></tr>
+                    <tr><th>Cálculo del Índice Global de Clima (IGC)</th><td>Promedio ponderado de las 10 dimensiones, escalado a 0–100. Pesos iguales (0.10 cada una).</td></tr>
                     <tr><th>Niveles de clasificación</th><td>Crítico (0–20) · Bajo (20.01–40) · Medio (40.01–60) · Alto (60.01–80) · Óptimo (80.01–100)</td></tr>
                     <tr><th>Validez declarada</th><td>Instrumento diagnóstico fundamentado teóricamente; validación psicométrica continua con datos de aplicación.</td></tr>
                 </tbody>
@@ -394,39 +392,10 @@
     </div>
 </section>
 
-<!-- =================== FUENTES DOCUMENTALES =================== -->
-<section id="fuentes">
-    <div class="container">
-        <div class="section-head" style="text-align:left;">
-            <span class="eyebrow">5 · Fuentes documentales</span>
-            <h2>Documentos completos disponibles en el repositorio</h2>
-            <p>Esta ficha es un extracto. Los documentos extendidos del Psycloid Method · Clima Organizacional v1.0 viven dentro del repositorio del proyecto.</p>
-        </div>
-
-        <ul class="ficha-fuentes">
-            <li>
-                <strong>Manual técnico completo</strong>
-                <span>Aproximadamente 25 páginas con 30 referencias APA.</span>
-                <code>legal/06_psycloid_clima_manual.md</code>
-            </li>
-            <li>
-                <strong>Tabla de especificaciones</strong>
-                <span>Blueprint completo del instrumento (dimensiones, sub-constructos e ítems).</span>
-                <code>legal/05_psycloid_clima_items.md</code>
-            </li>
-            <li>
-                <strong>Schema y seeds en base de datos</strong>
-                <span>Estructura multitenant con datos iniciales del instrumento.</span>
-                <code>sql/multitenant/010-015</code>
-            </li>
-        </ul>
-    </div>
-</section>
-
 <!-- =================== CTA FINAL =================== -->
 <section class="cta-final">
     <div class="container">
-        <h2>¿Quieres aplicar el Psycloid Method en tu organización?</h2>
+        <h2>¿Quieres aplicar este diagnóstico de clima en tu organización?</h2>
         <p>Solicita una demo gratuita y conversemos sobre cómo se vería un diagnóstico de clima en tu empresa: tamaño, segmentaciones, cronograma e inversión.</p>
         <div class="hero-ctas" style="justify-content:center;">
             <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
