@@ -393,6 +393,8 @@ section.alt { background: var(--color-bg-alt); }
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+/* Modificador para grids con 3 cards: 3 cols desktop, 2 tablet, 1 mobile */
+.cards-grid.cards-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .service-card {
     background: #fff;
     border: 1px solid var(--color-border);
@@ -2627,6 +2629,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
     .hero-grid { grid-template-columns: 1fr; }
     .trust-grid { grid-template-columns: repeat(2, 1fr); }
     .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    .cards-grid.cards-grid-3 { grid-template-columns: repeat(2, 1fr); }
     .stats-grid { grid-template-columns: 1fr; }
     .process-grid { grid-template-columns: 1fr; }
     .pricing-grid { grid-template-columns: 1fr; }
@@ -2717,6 +2720,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 
     .trust-grid { grid-template-columns: 1fr; }
     .cards-grid { grid-template-columns: 1fr; }
+    .cards-grid.cards-grid-3 { grid-template-columns: 1fr; }
     .deliv-grid { grid-template-columns: 1fr; }
     .dim-grid { grid-template-columns: 1fr; }
     .likert { flex-direction: column; align-items: flex-start; }

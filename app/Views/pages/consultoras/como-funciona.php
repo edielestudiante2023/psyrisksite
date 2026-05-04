@@ -59,7 +59,7 @@
             <h2>No te dejamos solo después de vincularte</h2>
         </div>
 
-        <div class="cards-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="cards-grid cards-grid-3">
             <div class="service-card">
                 <h3>Soporte técnico</h3>
                 <p>Canal directo de WhatsApp para resolver dudas de plataforma en horario hábil.</p>
