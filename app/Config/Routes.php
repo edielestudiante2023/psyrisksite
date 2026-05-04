@@ -15,6 +15,7 @@ $routes->match(['get', 'head'], '/', 'Home::index');
 $routes->group('servicios', static function ($routes) {
     $routes->match(['get', 'head'], 'bateria-riesgo', 'Servicios::bateriaRiesgo');
     $routes->match(['get', 'head'], 'clima-organizacional', 'Servicios::climaOrganizacional');
+    $routes->match(['get', 'head'], 'clima-organizacional/ficha-tecnica', 'Servicios::fichaTecnicaClima');
     $routes->match(['get', 'head'], 'vigilancia-epidemiologica', 'Servicios::vigilanciaEpidemiologica');
     $routes->match(['get', 'head'], 'planes-intervencion', 'Servicios::planesIntervencion');
     $routes->match(['get', 'head'], 'capacitaciones', 'Servicios::capacitaciones');

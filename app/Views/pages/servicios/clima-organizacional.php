@@ -7,17 +7,17 @@
     ['name' => 'Clima Organizacional',  'url' => base_url('servicios/clima-organizacional')],
 ]]) ?>
 <?= view('partials/jsonld-service', [
-    'name'        => 'Diagnóstico de Clima Organizacional',
-    'description' => 'Diagnóstico de clima organizacional con segmentación por área, cargo y antigüedad. 8 dimensiones medidas, indicadores accionables y capacitaciones de bienestar incluidas.',
+    'name'        => 'Diagnóstico de Clima Organizacional · Psycloid Method v1.0',
+    'description' => 'Diagnóstico de clima organizacional con el Psycloid Method v1.0: 10 dimensiones, 40 ítems, escala Likert de 5 puntos, Índice Global de Clima (IGC) 0–100 y plan de mejora accionable.',
     'url'         => base_url('servicios/clima-organizacional'),
     'serviceType' => 'Clima organizacional',
 ]) ?>
 <?= view('partials/jsonld-faq', ['faqs' => [
-    ['q' => '¿En qué se diferencia el clima organizacional de la batería de riesgo psicosocial?', 'a' => 'La batería es un instrumento legalmente obligatorio que mide factores de riesgo psicosocial definidos por Mintrabajo. El clima organizacional es un diagnóstico estratégico voluntario que mide la percepción global de la experiencia laboral. Son complementarios.'],
-    ['q' => '¿Cada cuánto se debería medir el clima organizacional?', 'a' => 'Una medición anual con pulsos cortos cada trimestre para detectar variaciones tempranas. PsyRisk ofrece ambos formatos.'],
-    ['q' => '¿Cómo se garantiza el anonimato de las respuestas?', 'a' => 'El enlace único evita respuestas duplicadas, pero las respuestas se almacenan disociadas del identificador y los reportes solo se entregan con un mínimo de 7 personas por segmento.'],
-    ['q' => '¿Qué pasa si un área tiene menos de 7 personas?', 'a' => 'El sistema agrupa esa área con la inmediatamente superior o con áreas afines para preservar el anonimato.'],
-    ['q' => '¿Las capacitaciones de bienestar están incluidas en el precio?', 'a' => 'Sí. El plan de Clima Organizacional incluye 2 capacitaciones grupales en formato virtual o presencial sobre los temas que arroje el diagnóstico.'],
+    ['q' => '¿En qué se diferencia el clima organizacional de la batería de riesgo psicosocial?', 'a' => 'La batería es un instrumento legalmente obligatorio que mide factores de riesgo psicosocial definidos por Mintrabajo. El clima organizacional es un diagnóstico estratégico voluntario que mide percepciones compartidas sobre políticas, prácticas y conductas. Son complementarios.'],
+    ['q' => '¿Qué mide exactamente el Psycloid Method de Clima Organizacional?', 'a' => 'Mide 10 dimensiones del clima a través de 40 ítems en escala Likert de 5 puntos. Calcula un Índice Global de Clima (IGC) de 0 a 100 con cinco niveles: Crítico, Bajo, Medio, Alto y Óptimo.'],
+    ['q' => '¿Cuánto tarda una persona en responder el cuestionario?', 'a' => 'Entre 12 y 15 minutos. Es 100% digital, anónimo e individual.'],
+    ['q' => '¿Quiénes pueden responder el instrumento?', 'a' => 'Trabajadores con al menos 3 meses de antigüedad. Se excluyen personas en proceso de desvinculación y temporales con vínculo intermitente menor a 90 días.'],
+    ['q' => '¿Cómo se garantiza el anonimato de las respuestas?', 'a' => 'El enlace es único para evitar duplicados, pero las respuestas se almacenan disociadas del identificador. Los reportes se entregan solo con un mínimo de 7 personas por segmento.'],
 ]]) ?>
 <?= $this->endSection() ?>
 
@@ -35,18 +35,18 @@
         </nav>
 
         <ul class="tag-list">
-            <li class="purple">Diagnóstico de percepción</li>
-            <li>8 dimensiones</li>
-            <li class="purple">Segmentación avanzada</li>
-            <li>Capacitaciones incluidas</li>
+            <li class="purple">Psycloid Method v1.0</li>
+            <li>10 dimensiones · 40 ítems</li>
+            <li class="purple">Escala Likert de 5 puntos</li>
+            <li>IGC 0–100</li>
         </ul>
 
-        <h1>Mide el <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">clima real</span> de tu organización, no la versión filtrada</h1>
-        <p class="lead">El clima organizacional anticipa la rotación, la productividad y los conflictos antes de que aparezcan en los indicadores duros. PsyRisk lo mide con anonimato garantizado, segmentación rica y planes de mejora ejecutables.</p>
+        <h1>Mide el <span style="background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; background-clip: text; color: transparent;">clima real</span> de tu organización con un instrumento fundamentado</h1>
+        <p class="lead">El <strong>Psycloid Method – Clima Organizacional v1.0</strong> mide percepciones compartidas sobre políticas, prácticas y conductas organizacionales. Está construido sobre marcos teóricos consolidados (Schneider, Patterson, Edmondson, Colquitt, Likert, Toro Álvarez) y entrega un Índice Global de Clima accionable.</p>
 
         <div class="hero-ctas">
             <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar diagnóstico</a>
-            <a href="#dimensiones" class="btn btn-outline btn-lg">Ver qué medimos</a>
+            <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-outline btn-lg">Ver ficha técnica</a>
         </div>
     </div>
 </section>
@@ -56,7 +56,7 @@
     <div class="container">
         <div class="big-callout">
             <div class="num">1 de cada 3</div>
-            <p>colaboradores piensa en renunciar este trimestre — y la mayoría no lo dirá en una reunión 1:1. El clima organizacional bien medido lo revela antes de que se vaya.</p>
+            <p>colaboradores piensa en renunciar este trimestre — y la mayoría no lo dirá en una reunión 1:1. Un instrumento de clima fundamentado y bien aplicado lo revela antes de que se vaya.</p>
         </div>
     </div>
 </section>
@@ -66,51 +66,65 @@
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Qué medimos</span>
-            <h2>Las 8 dimensiones que definen el clima de una empresa</h2>
-            <p>Adaptadas al contexto colombiano y validadas en sectores que van desde manufactura hasta servicios profesionales.</p>
+            <h2>Las 10 dimensiones del Psycloid Method v1.0</h2>
+            <p>Cada dimensión está anclada en literatura científica de referencia y se mide con 4 ítems positivos en escala Likert de 5 puntos.</p>
         </div>
 
         <div class="dim-grid">
             <div class="dim-card">
-                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-                <h4>Liderazgo</h4>
-                <p>Estilo, cercanía y reconocimiento</p>
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                <h4>1. Identificación y orgullo</h4>
+                <p>Vínculo emocional, orgullo de pertenecer y disposición a recomendar.</p>
             </div>
             <div class="dim-card alt">
                 <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-                <h4>Comunicación</h4>
-                <p>Flujo, claridad y retroalimentación</p>
+                <h4>2. Comunicación e información</h4>
+                <p>Calidad y oportunidad del flujo de información; canales bidireccionales.</p>
+            </div>
+            <div class="dim-card">
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.68.94 6.36 2.64"/></svg></span>
+                <h4>3. Innovación y apertura al cambio</h4>
+                <p>Cultura que experimenta, valora ideas nuevas y aprende del error.</p>
+            </div>
+            <div class="dim-card alt">
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><circle cx="19" cy="7" r="2"/></svg></span>
+                <h4>4. Trabajo en equipo y cohesión</h4>
+                <p>Colaboración, confianza interpersonal y seguridad psicológica.</p>
+            </div>
+            <div class="dim-card">
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <h4>5. Reconocimiento y desarrollo</h4>
+                <p>Reconocimiento no salarial, retroalimentación útil y crecimiento.</p>
+            </div>
+            <div class="dim-card alt">
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M5 8h14"/><path d="M5 16h14"/></svg></span>
+                <h4>6. Justicia organizacional y equidad</h4>
+                <p>Justicia procedimental, distributiva e interaccional.</p>
             </div>
             <div class="dim-card">
                 <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></span>
-                <h4>Motivación</h4>
-                <p>Sentido y propósito del rol</p>
+                <h4>7. Visión, propósito y alineación</h4>
+                <p>Claridad del rumbo, sentido del trabajo y alineación estratégica.</p>
             </div>
             <div class="dim-card alt">
-                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                <h4>Reconocimiento</h4>
-                <p>Justicia y equidad percibida</p>
-            </div>
-            <div class="dim-card">
-                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><circle cx="19" cy="7" r="2"/></svg></span>
-                <h4>Trabajo en equipo</h4>
-                <p>Cohesión y colaboración</p>
-            </div>
-            <div class="dim-card alt">
-                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-                <h4>Bienestar</h4>
-                <p>Equilibrio vida-trabajo</p>
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <h4>8. Liderazgo y confianza en la dirección</h4>
+                <p>Confianza en la alta dirección y coherencia decir-hacer.</p>
             </div>
             <div class="dim-card">
                 <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></span>
-                <h4>Desarrollo</h4>
-                <p>Crecimiento y aprendizaje</p>
+                <h4>9. Gestión estratégica del talento</h4>
+                <p>Identificar, desarrollar, atraer y retener talento meritocráticamente.</p>
             </div>
             <div class="dim-card alt">
-                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.36.16.69.4 1 .69 1 0 0 0 1.51-1H21a2 2 0 0 1 0 4h-.09c-.71.06-1.32.4-1.51 1z"/></svg></span>
-                <h4>Procesos</h4>
-                <p>Claridad y eficiencia operativa</p>
+                <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.39 7.36H22l-6.18 4.49L18.21 22 12 17.27 5.79 22l2.39-8.15L2 9.36h7.61z"/></svg></span>
+                <h4>10. Cultura de calidad y excelencia</h4>
+                <p>Estándares altos compartidos, mejora continua y orgullo del producto.</p>
             </div>
+        </div>
+
+        <div style="text-align:center; margin-top:32px;">
+            <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-outline">Ver ficha técnica completa</a>
         </div>
     </div>
 </section>
@@ -121,27 +135,27 @@
         <div class="split flip">
             <div class="split-text">
                 <span class="eyebrow" style="display:inline-block; text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; font-weight:600; color:var(--color-secondary); margin-bottom:12px;">Cómo se responde</span>
-                <h2>Escala de 5 niveles con redacción cuidada</h2>
-                <p>Tus colaboradores responden afirmaciones cortas en una escala de 5 puntos. Las preguntas están redactadas para evitar sesgo de deseabilidad social y respuesta automática.</p>
-                <p>Cada cuestionario toma entre <strong>10 y 15 minutos</strong> y se puede responder desde cualquier dispositivo. Los enlaces son únicos por persona, pero las respuestas son <strong>completamente anónimas</strong> a nivel individual.</p>
-                <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary">Ver formulario de demostración</a>
+                <h2>40 ítems positivos en escala Likert de 5 puntos</h2>
+                <p>Los colaboradores responden afirmaciones cortas en una escala que va de <strong>1 = Totalmente en desacuerdo</strong> a <strong>5 = Totalmente de acuerdo</strong>. Todos los ítems son positivos: puntaje alto = clima favorable, sin ítems inversos.</p>
+                <p>Cada cuestionario toma entre <strong>12 y 15 minutos</strong> y se responde desde cualquier dispositivo. Los enlaces son únicos por persona, las respuestas son <strong>completamente anónimas</strong> a nivel individual y el marco temporal evaluado es la <strong>experiencia de los últimos 6 meses</strong>.</p>
+                <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-primary">Ver los 40 ítems</a>
             </div>
 
             <div class="split-visual" style="background:#fff;">
                 <div style="font-size:.8rem; color:var(--color-muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px;">Vista previa del cuestionario</div>
 
                 <div class="likert">
-                    <span class="stmt">Mi líder me retroalimenta de forma constructiva</span>
+                    <span class="stmt">Me siento orgulloso de pertenecer a esta organización.</span>
                     <div class="scale">
                         <span class="dot">1</span>
                         <span class="dot">2</span>
                         <span class="dot">3</span>
-                        <span class="dot active">4</span>
-                        <span class="dot">5</span>
+                        <span class="dot">4</span>
+                        <span class="dot active">5</span>
                     </div>
                 </div>
                 <div class="likert">
-                    <span class="stmt">La carga de trabajo asignada es razonable</span>
+                    <span class="stmt">Las decisiones importantes se comunican de forma clara y oportuna.</span>
                     <div class="scale">
                         <span class="dot">1</span>
                         <span class="dot">2</span>
@@ -151,18 +165,72 @@
                     </div>
                 </div>
                 <div class="likert">
-                    <span class="stmt">Recomendaría a un amigo trabajar aquí</span>
+                    <span class="stmt">Puedo expresar mis opiniones sin temor a consecuencias negativas.</span>
                     <div class="scale">
                         <span class="dot">1</span>
                         <span class="dot">2</span>
                         <span class="dot">3</span>
-                        <span class="dot">4</span>
-                        <span class="dot active">5</span>
+                        <span class="dot active">4</span>
+                        <span class="dot">5</span>
                     </div>
                 </div>
                 <div style="display:flex; justify-content:space-between; margin-top:14px; font-size:.78rem; color:var(--color-muted);">
-                    <span>Totalmente en desacuerdo</span>
-                    <span>Totalmente de acuerdo</span>
+                    <span>1 · Totalmente en desacuerdo</span>
+                    <span>5 · Totalmente de acuerdo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =================== ÍNDICE GLOBAL DE CLIMA =================== -->
+<section class="alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Índice Global de Clima</span>
+            <h2>Un solo número para conversar — 10 dimensiones para actuar</h2>
+            <p>El IGC se calcula como promedio ponderado de las 10 dimensiones (pesos iguales 0.10 en v1.0), escalado a 0–100. Cinco niveles equidistantes con interpretación clínica de cada uno.</p>
+        </div>
+
+        <div class="ficha-baremos">
+            <div class="ficha-baremo critico">
+                <span class="ficha-baremo-bullet">🔴</span>
+                <div>
+                    <strong>Crítico</strong>
+                    <span class="ficha-baremo-range">0 – 20</span>
+                    <p>Estado severamente deficitario. Intervención inmediata.</p>
+                </div>
+            </div>
+            <div class="ficha-baremo bajo">
+                <span class="ficha-baremo-bullet">🟠</span>
+                <div>
+                    <strong>Bajo</strong>
+                    <span class="ficha-baremo-range">20.01 – 40</span>
+                    <p>Estado deficitario. Intervención prioritaria a corto plazo.</p>
+                </div>
+            </div>
+            <div class="ficha-baremo medio">
+                <span class="ficha-baremo-bullet">🟡</span>
+                <div>
+                    <strong>Medio</strong>
+                    <span class="ficha-baremo-range">40.01 – 60</span>
+                    <p>Focos de mejora identificables. Plan a 12 meses.</p>
+                </div>
+            </div>
+            <div class="ficha-baremo alto">
+                <span class="ficha-baremo-bullet">🟢</span>
+                <div>
+                    <strong>Alto</strong>
+                    <span class="ficha-baremo-range">60.01 – 80</span>
+                    <p>Estado favorable. Mantener prácticas.</p>
+                </div>
+            </div>
+            <div class="ficha-baremo optimo">
+                <span class="ficha-baremo-bullet">🟢</span>
+                <div>
+                    <strong>Óptimo</strong>
+                    <span class="ficha-baremo-range">80.01 – 100</span>
+                    <p>Estado de excelencia. Documentar y replicar.</p>
                 </div>
             </div>
         </div>
@@ -170,7 +238,7 @@
 </section>
 
 <!-- =================== SEGMENTACIÓN =================== -->
-<section class="alt">
+<section>
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">Segmentación</span>
@@ -213,6 +281,7 @@
                         <span class="seg-val">Híbrido</span>
                     </div>
                 </div>
+                <p style="margin-top:18px; font-size:.85rem; color:var(--color-muted);">El IGC se complementa con el índice <strong>rWG</strong> (James, Demaree &amp; Wolf, 1984) para validar agregabilidad: si rWG ≥ 0.70 las percepciones son suficientemente compartidas; si rWG &lt; 0.70 se reporta variabilidad y se recomienda análisis cualitativo por subgrupo.</p>
             </div>
 
             <div class="split-visual">
@@ -224,11 +293,11 @@
                     <div class="radar-bg"></div>
                     <div class="radar-axes"></div>
                     <div class="radar-shape"></div>
-                    <span class="radar-label" style="top:-8px; left:50%; transform:translateX(-50%);">Liderazgo</span>
+                    <span class="radar-label" style="top:-8px; left:50%; transform:translateX(-50%);">Identif.</span>
                     <span class="radar-label" style="top:30%; right:-12px;">Comunic.</span>
-                    <span class="radar-label" style="bottom:14%; right:0;">Bienestar</span>
-                    <span class="radar-label" style="bottom:-8px; left:50%; transform:translateX(-50%);">Desarrollo</span>
-                    <span class="radar-label" style="top:42%; left:-8px;">Procesos</span>
+                    <span class="radar-label" style="bottom:14%; right:0;">Liderazgo</span>
+                    <span class="radar-label" style="bottom:-8px; left:50%; transform:translateX(-50%);">Calidad</span>
+                    <span class="radar-label" style="top:42%; left:-8px;">Equipo</span>
                 </div>
                 <div style="margin-top:18px; display:flex; justify-content:space-around; font-size:.78rem; color:var(--color-muted);">
                     <span>● Promedio empresa</span>
@@ -240,10 +309,10 @@
 </section>
 
 <!-- =================== TESTIMONIO =================== -->
-<section>
+<section class="alt">
     <div class="container">
         <div class="quote">
-            "El reporte de clima de PsyRisk nos mostró que la rotación en planta no era por sueldo — era por ausencia de retroalimentación. Ajustamos el modelo de supervisión y la rotación bajó 11 puntos en seis meses. Sin esa segmentación habríamos seguido subiendo salarios sin resolver el problema."
+            "El reporte de clima de PsyRisk nos mostró que la rotación en planta no era por sueldo — era por ausencia de retroalimentación y de reconocimiento. Ajustamos el modelo de supervisión y la rotación bajó 11 puntos en seis meses. Sin esa segmentación habríamos seguido subiendo salarios sin resolver el problema."
             <span class="by">— Jefatura de Talento Humano · Empresa del sector industrial · Cundinamarca</span>
         </div>
     </div>
@@ -274,31 +343,37 @@
             <details>
                 <summary>¿En qué se diferencia clima de la batería de riesgo psicosocial?</summary>
                 <div class="answer">
-                    <p>La batería es un instrumento <strong>legalmente obligatorio</strong> que mide factores de riesgo psicosocial específicos definidos por Mintrabajo. El clima organizacional es un diagnóstico <strong>estratégico voluntario</strong> que mide la percepción global de la experiencia laboral. Son complementarios: la batería marca el cumplimiento; el clima marca la cultura.</p>
+                    <p>La batería es un instrumento <strong>legalmente obligatorio</strong> que mide factores de riesgo psicosocial específicos definidos por Mintrabajo. El clima organizacional es un diagnóstico <strong>estratégico voluntario</strong> que mide percepciones compartidas sobre políticas, prácticas y conductas. Son complementarios: la batería marca el cumplimiento; el clima marca la cultura.</p>
                 </div>
             </details>
             <details>
-                <summary>¿Cada cuánto se debería medir el clima?</summary>
+                <summary>¿Qué mide exactamente el Psycloid Method de Clima v1.0?</summary>
                 <div class="answer">
-                    <p>Lo recomendable es <strong>una medición anual</strong> con pulsos cortos (5–7 preguntas) cada trimestre para detectar variaciones tempranas. PsyRisk ofrece ambos formatos.</p>
+                    <p>Mide <strong>10 dimensiones</strong> a través de <strong>40 ítems</strong> en escala Likert de 5 puntos. Calcula un Índice Global de Clima (IGC) de 0 a 100 con cinco niveles: Crítico, Bajo, Medio, Alto y Óptimo. Está fundamentado en Schneider, Patterson, Edmondson, Colquitt, Likert y Toro Álvarez, entre otros.</p>
+                </div>
+            </details>
+            <details>
+                <summary>¿Quiénes deberían responder y quiénes no?</summary>
+                <div class="answer">
+                    <p>Población objetivo: trabajadores con <strong>≥ 3 meses de antigüedad</strong> en la organización. No deberían responder: personas con menos de 3 meses, quienes están en proceso de desvinculación y temporales con vínculo intermitente menor a 90 días.</p>
+                </div>
+            </details>
+            <details>
+                <summary>¿Cuánto tarda y desde qué dispositivo se responde?</summary>
+                <div class="answer">
+                    <p>Entre <strong>12 y 15 minutos</strong>, en aplicación 100% digital, anónima e individual. Funciona desde cualquier dispositivo con navegador (computador, tablet o móvil).</p>
                 </div>
             </details>
             <details>
                 <summary>¿Cómo garantizan el anonimato si el enlace es único?</summary>
                 <div class="answer">
-                    <p>El enlace único sirve solo para evitar respuestas duplicadas y controlar la participación. Las respuestas se almacenan disociadas del identificador y los reportes solo se entregan en grupos de <strong>mínimo 7 personas</strong> por segmento, lo que hace imposible la identificación individual.</p>
-                </div>
-            </details>
-            <details>
-                <summary>¿Qué pasa si un área tiene menos de 7 personas?</summary>
-                <div class="answer">
-                    <p>El sistema agrupa esa área con la inmediatamente superior o con áreas afines para preservar el anonimato. La segmentación se ajusta automáticamente sin que tu empresa tenga que hacer nada.</p>
+                    <p>El enlace único sirve solo para evitar respuestas duplicadas. Las respuestas se almacenan disociadas del identificador y los reportes solo se entregan en grupos de <strong>mínimo 7 personas</strong> por segmento. Si un área tiene menos de 7 personas, el sistema la agrupa automáticamente con áreas afines.</p>
                 </div>
             </details>
             <details>
                 <summary>¿Las capacitaciones de bienestar están incluidas en el precio?</summary>
                 <div class="answer">
-                    <p>Sí. El plan de Clima Organizacional incluye <strong>2 capacitaciones grupales</strong> (en formato virtual o presencial en Bogotá/Soacha) sobre los temas que arroje el diagnóstico — usualmente liderazgo, gestión emocional o equilibrio vida-trabajo.</p>
+                    <p>Sí. El plan de Clima Organizacional incluye <strong>2 capacitaciones grupales</strong> (en formato virtual o presencial en Bogotá/Soacha) sobre los temas que arroje el diagnóstico — usualmente liderazgo, gestión emocional, retroalimentación o equilibrio vida-trabajo.</p>
                 </div>
             </details>
         </div>
@@ -309,10 +384,10 @@
 <section class="cta-final">
     <div class="container">
         <h2>Mide hoy el clima — toma decisiones con datos mañana</h2>
-        <p>Combina Clima Organizacional con la Batería de Riesgo Psicosocial y obtén una vista completa de la salud cultural y normativa de tu empresa.</p>
+        <p>Combina el Psycloid Method de Clima Organizacional con la Batería de Riesgo Psicosocial y obtén una vista completa de la salud cultural y normativa de tu empresa.</p>
         <div class="hero-ctas" style="justify-content:center;">
             <a href="https://cycloidtalent.com/contacto" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar Demo Gratis</a>
-            <a href="<?= base_url('servicios/bateria-riesgo') ?>" class="btn btn-outline btn-lg">Ver Batería Psicosocial</a>
+            <a href="<?= base_url('servicios/clima-organizacional/ficha-tecnica') ?>" class="btn btn-outline btn-lg">Ver ficha técnica</a>
         </div>
     </div>
 </section>

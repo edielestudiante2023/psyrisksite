@@ -17,9 +17,19 @@ class Servicios extends BaseController
     public function climaOrganizacional(): string
     {
         return view('pages/servicios/clima-organizacional', [
-            'title'       => 'Clima Organizacional Empresas · Diagnóstico y Capacitaciones · PsyRisk',
-            'description' => 'Diagnóstico de clima organizacional con segmentación por área, cargo y antigüedad. 8 dimensiones, capacitaciones de bienestar y plan accionable.',
-            'keywords'    => 'clima organizacional, encuesta de clima laboral, diagnóstico clima empresa, clima laboral colombia',
+            'title'       => 'Clima Organizacional · Psycloid Method v1.0 · 10 dimensiones · PsyRisk',
+            'description' => 'Diagnóstico de clima organizacional con el Psycloid Method v1.0: 10 dimensiones, 40 ítems, escala Likert de 5 puntos e Índice Global de Clima (IGC) 0–100.',
+            'keywords'    => 'clima organizacional, psycloid method, encuesta de clima laboral, diagnóstico clima empresa, clima laboral colombia, IGC',
+            'activeNav'   => 'servicios',
+        ]);
+    }
+
+    public function fichaTecnicaClima(): string
+    {
+        return view('pages/servicios/ficha-tecnica-clima', [
+            'title'       => 'Ficha Técnica · Psycloid Method – Clima Organizacional v1.0 · PsyRisk',
+            'description' => 'Ficha técnica completa del Psycloid Method – Clima Organizacional v1.0: marco teórico, 10 dimensiones, 40 ítems, escala Likert 5 puntos, IGC 0–100 y baremos.',
+            'keywords'    => 'ficha técnica clima organizacional, psycloid method clima v1.0, dimensiones clima laboral, baremos clima',
             'activeNav'   => 'servicios',
         ]);
     }

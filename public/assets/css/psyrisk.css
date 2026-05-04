@@ -2736,3 +2736,222 @@ textarea.form-control { resize: vertical; min-height: 130px; }
     .form-card { padding: 24px; }
     .pricing-table { font-size: .82rem; }
 }
+
+/* ---------- Ficha técnica (clima organizacional) ---------- */
+.ficha-toc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+    padding: 14px 18px;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: .92rem;
+    color: var(--color-text-soft);
+    box-shadow: var(--shadow-sm);
+}
+.ficha-toc strong { color: var(--color-text); }
+.ficha-toc a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.ficha-toc a:hover { color: var(--color-primary-dark); text-decoration: underline; }
+.ficha-toc .sep { color: var(--color-border); }
+
+.ficha-table-wrap {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+.ficha-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .94rem;
+}
+.ficha-table thead th {
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    text-align: left;
+    padding: 14px 18px;
+    font-weight: 700;
+    font-size: .82rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    border-bottom: 1px solid var(--color-border);
+}
+.ficha-table tbody th,
+.ficha-table tbody td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+    color: var(--color-text-soft);
+}
+.ficha-table tbody th {
+    width: 32%;
+    font-weight: 600;
+    color: var(--color-text);
+    background: #FAFBFD;
+}
+.ficha-table tbody tr:last-child th,
+.ficha-table tbody tr:last-child td { border-bottom: 0; }
+.ficha-table code {
+    background: var(--color-bg-alt);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: .9em;
+    color: var(--color-secondary-dark);
+}
+.ficha-table.ficha-items td:first-child {
+    font-weight: 700;
+    color: var(--color-primary);
+    width: 50px;
+}
+.ficha-table.ficha-items td:last-child {
+    font-size: .86rem;
+    color: var(--color-muted);
+}
+
+.ficha-items-block { margin-bottom: 28px; }
+.ficha-items-block h3 {
+    font-size: 1.08rem;
+    margin-bottom: 12px;
+    color: var(--color-secondary);
+}
+
+.ficha-dim-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+.ficha-dim {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 22px 22px 18px;
+    box-shadow: var(--shadow-sm);
+}
+.ficha-dim header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.ficha-dim header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--color-text);
+}
+.ficha-dim-num {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: .92rem;
+    flex-shrink: 0;
+}
+.ficha-dim p { font-size: .9rem; margin: 0 0 8px; }
+.ficha-dim p:last-child { margin-bottom: 0; }
+.ficha-dim-anclaje {
+    font-size: .82rem !important;
+    color: var(--color-muted) !important;
+    padding-top: 8px;
+    border-top: 1px dashed var(--color-border);
+}
+
+.ficha-baremos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 12px;
+}
+.ficha-baremo {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 18px 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--color-border);
+}
+.ficha-baremo.critico { border-top-color: #DC2626; }
+.ficha-baremo.bajo    { border-top-color: #F97316; }
+.ficha-baremo.medio   { border-top-color: #F59E0B; }
+.ficha-baremo.alto    { border-top-color: #84CC16; }
+.ficha-baremo.optimo  { border-top-color: #16A34A; }
+.ficha-baremo-bullet { font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
+.ficha-baremo strong {
+    display: block;
+    color: var(--color-text);
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+.ficha-baremo-range {
+    display: block;
+    font-size: .8rem;
+    color: var(--color-muted);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.ficha-baremo p {
+    font-size: .82rem;
+    margin: 0;
+    color: var(--color-text-soft);
+    line-height: 1.45;
+}
+.ficha-baremos-table tbody td:first-child { width: 140px; }
+
+.ficha-fuentes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+.ficha-fuentes li {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: 16px 18px;
+    box-shadow: var(--shadow-sm);
+}
+.ficha-fuentes strong {
+    display: block;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+.ficha-fuentes span {
+    display: block;
+    color: var(--color-text-soft);
+    font-size: .9rem;
+    margin-bottom: 8px;
+}
+.ficha-fuentes code {
+    background: var(--color-bg-alt);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: .85rem;
+    color: var(--color-secondary-dark);
+    display: inline-block;
+}
+
+@media (max-width: 980px) {
+    .ficha-dim-list { grid-template-columns: 1fr; }
+    .ficha-baremos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+    .ficha-baremos { grid-template-columns: 1fr; }
+    .ficha-table { font-size: .85rem; }
+    .ficha-table thead th,
+    .ficha-table tbody th,
+    .ficha-table tbody td { padding: 10px 12px; }
+}
