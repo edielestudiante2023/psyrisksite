@@ -3060,3 +3060,67 @@ textarea.form-control { resize: vertical; min-height: 130px; }
     .ficha-table tbody th,
     .ficha-table tbody td { padding: 10px 12px; }
 }
+
+/* ---------- Hero: chips flotantes en cadena de valor ---------- */
+.hero-illustration .brain-img {
+    animation: brain-pulse 3.6s ease-in-out infinite;
+}
+@keyframes brain-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.035); }
+}
+
+.float-chip {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--color-text);
+    box-shadow: var(--shadow-md);
+    white-space: nowrap;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0;
+    animation: float-fade 7.2s ease-in-out infinite;
+}
+.float-chip svg { flex-shrink: 0; }
+.float-chip.chip-1 { top:  6%;  left: -2%;  color: var(--color-secondary); animation-delay: 0s;   }
+.float-chip.chip-2 { top: 22%;  right: -4%; color: var(--color-primary);   animation-delay: 1.2s; }
+.float-chip.chip-3 { top: 46%;  left: -6%;  color: var(--color-primary);   animation-delay: 2.4s; }
+.float-chip.chip-4 { top: 60%;  right: -2%; color: var(--color-secondary); animation-delay: 3.6s; }
+.float-chip.chip-5 { bottom: 14%; left: 2%; color: var(--color-success);   animation-delay: 4.8s; }
+.float-chip.chip-6 { bottom: 2%; right: 8%; color: var(--color-primary-dark); animation-delay: 6.0s; }
+
+@keyframes float-fade {
+    0%   { opacity: 0; transform: translateY(28px) scale(.92); }
+    10%  { opacity: 1; transform: translateY(0)    scale(1);   }
+    55%  { opacity: 1; transform: translateY(-32px) scale(1);  }
+    80%  { opacity: 0; transform: translateY(-72px) scale(.92);}
+    100% { opacity: 0; transform: translateY(-90px) scale(.88);}
+}
+
+@media (max-width: 760px) {
+    .float-chip { font-size: .72rem; padding: 6px 10px; }
+    .float-chip.chip-1 { left: 0%; }
+    .float-chip.chip-2 { right: 0%; }
+    .float-chip.chip-3 { left: 0%; }
+    .float-chip.chip-4 { right: 0%; }
+    .float-chip.chip-6 { right: 4%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-illustration .brain-circle,
+    .hero-illustration .brain-ring,
+    .hero-illustration .brain-img { animation: none; }
+    .float-chip {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}

@@ -30,10 +30,32 @@
                     <div class="brain-circle"></div>
                     <div class="brain-ring"></div>
                     <img src="<?= base_url('assets/img/logo_psirysk.png') ?>" alt="" class="brain-img">
-                    <span class="orbit-pill tl">✓ Resolución 2764 cumplida</span>
-                    <span class="orbit-pill tr">📊 Reporte oficial automático</span>
-                    <span class="orbit-pill br">⚡ Plan de intervención generado</span>
-                    <span class="orbit-pill bl">🔒 Datos protegidos · Ley 1581</span>
+
+                    <!-- Cadena de valor: 6 chips flotantes en stagger (input → procesamiento → output → garantías) -->
+                    <span class="float-chip chip-1">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        <span>Solo toma la foto</span>
+                    </span>
+                    <span class="float-chip chip-2">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+                        <span>Digitación inteligente con IA</span>
+                    </span>
+                    <span class="float-chip chip-3">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        <span>Dashboards en vivo</span>
+                    </span>
+                    <span class="float-chip chip-4">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <span>Vigilancia continua</span>
+                    </span>
+                    <span class="float-chip chip-5">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        <span>Cumple Resolución 2764</span>
+                    </span>
+                    <span class="float-chip chip-6">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        <span>Datos protegidos · Ley 1581</span>
+                    </span>
                 </div>
             </div>
         </div>
