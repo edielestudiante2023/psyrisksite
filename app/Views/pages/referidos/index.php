@@ -107,7 +107,7 @@
                     <?php
                         $oldRef = $old['referrals'][$i] ?? ['name' => '', 'email' => ''];
                     ?>
-                    <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:12px; margin-bottom:12px;">
+                    <div class="referidos-row">
                         <input type="text" name="referrals[<?= $i ?>][name]" value="<?= esc($oldRef['name'] ?? '') ?>" maxlength="120" placeholder="Nombre del referido <?= $i + 1 ?>" style="padding:12px 14px; border:1px solid var(--color-border); border-radius:10px; font-size:1rem;">
                         <input type="email" name="referrals[<?= $i ?>][email]" value="<?= esc($oldRef['email'] ?? '') ?>" maxlength="190" placeholder="email@del.referido<?= $i + 1 ?>.com" style="padding:12px 14px; border:1px solid var(--color-border); border-radius:10px; font-size:1rem;">
                     </div>

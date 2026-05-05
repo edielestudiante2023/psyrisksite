@@ -190,7 +190,7 @@
             </div>
         </div>
 
-        <div style="margin-top:20px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px;">
+        <div class="cards-grid cards-grid-3" style="margin-top:20px;">
             <div style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-md); padding:18px;">
                 <div style="font-size:.78rem; color:var(--color-muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px;">Umbral verde</div>
                 <strong style="color:var(--color-success);">Riesgo controlado</strong>
